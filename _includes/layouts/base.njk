@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#EDEDED] font-sans">
+  <head>
+    <title>{{ title }}</title>
+
+    <!-- Page Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#EDEDED" />
+    <meta name="description" content="The easiest way for healthcare workers to find the best locum opportunities." />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://hopmedic.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hopmedic ⋅ Find the best locum opportunities near you.">
+    <meta property="og:description" content="The easiest way for healthcare workers to find the best locum opportunities.">
+    <meta property="og:image" content="https://hopmedic.com/screenshot-min.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="hopmedic.com">
+    <meta property="twitter:url" content="https://hopmedic.com">
+    <meta name="twitter:title" content="Hopmedic ⋅ Find the best locum opportunities near you.">
+    <meta name="twitter:description" content="The easiest way for healthcare workers to find the best locum opportunities.">
+    <meta name="twitter:image" content="https://hopmedic.com/screenshot-min.png">
+        
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}" />
+    
+    <!-- Font Awesome 5 -->
+    <link href="/assets/libraries/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/assets/libraries/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="/assets/libraries/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="/assets/libraries/fontawesome/css/regular.min.css" rel="stylesheet">
+
+    <!-- AlpineJS -->
+    <script
+      defer
+      src="https://unpkg.com/@alpinejs/persist@3.2.2/dist/cdn.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"
+    ></script>
+
+    <!-- Barba -->
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- GSAP -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
+  </head>
+  <body 
+    class="antialiased text-slate-600 font-normal"
+    data-barba="wrapper"
+    x-data="
+    }"
+  >
+    {{ content | safe }}
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

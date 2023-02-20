@@ -1,0 +1,76 @@
+<div class="fixed top-0 left-0 w-full h-screen bg-slate-500/20 z-30" x-cloak x-show="dialogs.partnerForm" x-transition.opacity @click="dialogs.partnerForm = false">
+</div>
+
+<div 
+  class="fixed top-0 right-0 w-[90%] md:w-[640px] h-screen rounded-l-3xl bg-slate-100 shadow-xl z-30 overflow-auto p-8 sm:p-12 transform" 
+  x-cloak 
+  x-show="dialogs.partnerForm" 
+  x-transition:enter="duration-200 delay-100"
+  x-transition:enter-start="opacity-0 translate-x-[192px]"
+  x-transition:enter-end="opacity-100 translate-x-0"
+  x-transition:leave="duration-200 delay-100"
+  x-transition:leave-start="opacity-100 translate-x-0"
+  x-transition:leave-end="opacity-0 translate-x-[192px]">
+
+  <button class="fixed top-6 right-6 w-10 h-10 flex items-center justify-center rounded-md bg-slate-200 hover:bg-slate-300 text-slate-500 hover:text-slate-600" @click="dialogs.partnerForm = false">
+    <i class="fa-solid fa-times"></i>
+  </button>
+
+  <div class="font-semibold text-emerald-500 mb-4">
+    Partner with us
+  </div>
+  <h3 class="mb-6 text-4xl text-2xl sm:text-4xl md:text-[2.5rem] leading-[1.05] sm:leading-[1.1] font-medium tracking-tight font-serif text-black max-w-[400px]">
+    Get exclusive access to our partner program
+  </h3>
+  <p class="text-base sm:text-lg mb-9">
+    Do you operate a hospital, clinic, or agency? Partner with us to advertise your jobs directly for maximum reach and gain access to our exclusive network of health professionals.
+  </p>
+  <ul class="grid grid-cols-1 gap-2 pb-10x border-bx border-slate-300 mb-10">
+    <li class="flex items-center text-slate-900 text-sm sm:text-base font-semibold">
+      <i class="fa-solid fa-fw fa-circle-check text-lg text-emerald-400 mr-3"></i> Advertise directly on Hopmedic
+    </li>
+    <li class="flex items-center text-slate-900 text-sm sm:text-base font-semibold">
+      <i class="fa-solid fa-fw fa-circle-check text-lg text-emerald-400 mr-3"></i> Maximum reach &amp; visibility
+    </li>
+    <li class="flex items-center text-slate-900 text-sm sm:text-base font-semibold">
+      <i class="fa-solid fa-fw fa-circle-check text-lg text-emerald-400 mr-3"></i> Access our exclusive network
+    </li>
+  </ul>
+
+  <form name="partner-interest" method="POST" data-netlify="true" class="grid grid-cols-1 gap-6 rounded-2xl bg-white shadow-lg p-6 sm:p-8 mb-28">
+    <div>
+      <label for="Full name" class="block text-sm font-medium text-gray-700">Full name</label>
+      <div class="mt-1">
+        <input type="text" name="Full name" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 sm:text-sm" placeholder="Jon Doe" required>
+      </div>
+    </div>
+
+    <div>
+      <label for="Email" class="block text-sm font-medium text-gray-700">Email</label>
+      <div class="mt-1">
+        <input type="email" name="Email" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 sm:text-sm" placeholder="you@example.com" required>
+      </div>
+    </div>
+
+    <div>
+      <label for="Company name" class="block text-sm font-medium text-gray-700">Company name</label>
+      <div class="mt-1">
+        <input type="text" name="Company name" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 sm:text-sm" placeholder="e.g. Compass Recruitments" required>
+      </div>
+    </div>
+
+    <div>
+      <label for="Message" class="block text-sm font-medium text-gray-700">Message (optional)</label>
+      <div class="mt-1">
+        <textarea rows="6" name="message" id="message" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 sm:text-sm" placeholder="I'd like to learn more about your partnership opportunities."></textarea>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-end pt-2">
+      <button type="submit" class="inline-flex items-center rounded-full bg-slate-900 hover:bg-slate-800 duration-100 text-white h-10 px-4 font-semibold text-sm shadow">
+        Register your interest
+        <i class="fa-solid fa-arrow-right ml-3 text-emerald-400"></i>
+      </button>
+    </div>
+  </form>
+</div>

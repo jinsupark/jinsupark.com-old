@@ -1,0 +1,12 @@
+{
+  "sitename": "Hopmedic - ",
+  "title": "Hopmedic",
+  "url": "https://hopmedic.com/",
+  "description": "Prototype for the Hopmedic app.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jin Su Park",
+    "email": "jinsupark@icloud.com",
+    "url": "https://jinsupark.com/"
+  }
+}

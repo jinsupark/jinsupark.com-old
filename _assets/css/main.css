@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../libraries/fontawesome/css/fontawesome.min.css';
+/* @import '../libraries/fontawesome/css/light.min.css';
+@import '../libraries/fontawesome/css/regular.min.css'; */
+@import '../libraries/fontawesome/css/solid.min.css';
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('../fonts/PPNeueMontreal/PPNeueMontreal-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('../fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@keyframes glowfly {
+  0% {
+    background-color: hsla(240, 30%, 60%, 0.6);
+  }
+  10% {
+    background-color: hsla(192, 30%, 60%, 0.6);
+  }
+  20% {
+    background-color: hsla(144, 30%, 60%, 0.6);
+  }
+  30% {
+    background-color: hsla(96, 30%, 60%, 0.6);
+  }
+  40% {
+    background-color: hsla(48, 30%, 60%, 0.6);
+  }
+  50% {
+    background-color: hsla(0, 30%, 60%, 0.6);
+  }
+  60% {
+    background-color: hsla(48, 30%, 60%, 0.6);
+  }
+  70% {
+    background-color: hsla(96, 30%, 60%, 0.6);
+  }
+  80% {
+    background-color: hsla(144, 30%, 60%, 0.6);
+  }
+  90% {
+    background-color: hsla(192, 30%, 60%, 0.6);
+  }
+  100% {
+    background-color: hsla(240, 30%, 60%, 0.6);
+  }
+}
+
+.gsap-glowfly-outer {
+  background-color: hsla(240, 30%, 60%, 0.6);
+  animation: 48s glowfly infinite;
+}
