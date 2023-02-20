@@ -1671,12 +1671,20 @@ video {
     height: 42px;
   }
 
+  .md\:h-\[512px\] {
+    height: 512px;
+  }
+
   .md\:w-\[640px\] {
     width: 640px;
   }
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[512px\] {
+    width: 512px;
   }
 
   .md\:translate-x-\[-50\%\] {
