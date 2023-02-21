@@ -29,17 +29,17 @@ document.addEventListener(
   function () {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('.gsap-glow', {
-      keyframes: {
-        y: [0, '-10%', 0],
-        scale: [1, 1.1, 1]
-      },
-      // ease: 'sine.inOut',
-      ease: 'linear',
-      duration: 3,
-      stagger: 1,
-      repeat: -1,
-    });
+    // gsap.to('.gsap-glow', {
+    //   keyframes: {
+    //     y: [0, '-10%', 0],
+    //     scale: [1, 1.1, 1]
+    //   },
+    //   // ease: 'sine.inOut',
+    //   ease: 'linear',
+    //   duration: 3,
+    //   stagger: 1,
+    //   repeat: -1,
+    // });
 
     // gsap.to('.gsap-glowfly-outer', {
     //   keyframes: {
