@@ -1548,6 +1548,10 @@ video {
   color: rgb(0 0 0 / 0.8);
 }
 
+.text-black\/60 {
+  color: rgb(0 0 0 / 0.6);
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
