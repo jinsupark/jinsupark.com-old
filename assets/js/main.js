@@ -33,10 +33,11 @@ document.addEventListener(
     gsap.to('.gsap-glowfly-outer', {
       keyframes: {
         x: [0, '-25%', '25%', 0],
+        scale: [1, 0.7, 1.4, 1]
       },
       yoyoEase: true,
       ease: 'sine.inOut',
-      duration: 24,
+      duration: 20,
       repeat: -1,
     });
 
@@ -52,18 +53,39 @@ document.addEventListener(
 
     gsap.to('.gsap-glowfly-outer', {
       keyframes: {
-        rotation: [0, 360],
+        rotation: [0, -360],
       },
       ease: 'linear',
-      duration: 12,
+      duration: 10,
       yoyoEase: true,
       repeat: -1,
     });
 
 
-    gsap.to('.gsap-glowfly-inner', {
+    // gsap.to('.gsap-glowfly-inner-1', {
+    //   keyframes: {
+    //     x: [0, '-2%', '2%', 0],
+    //     // scale: [1, 0.6, 1.2, 1]
+    //   },
+    //   yoyoEase: true,
+    //   ease: 'sine.inOut',
+    //   duration: 24,
+    //   repeat: -1,
+    // });
+
+    // gsap.to('.gsap-glowfly-inner-1', {
+    //   keyframes: {
+    //     y: [0, '-2%', '2%', 0],
+    //   },
+    //   yoyoEase: true,
+    //   ease: 'sine.inOut',
+    //   duration: 12,
+    //   repeat: -1,
+    // });
+
+    gsap.to('.gsap-glowfly-inner-1', {
       keyframes: {
-        x: [0, '-15%', '15%', 0],
+        rotation: [0, 360],
       },
       yoyoEase: true,
       ease: 'sine.inOut',
@@ -71,7 +93,18 @@ document.addEventListener(
       repeat: -1,
     });
 
-    gsap.to('.gsap-glowfly-inner', {
+    gsap.to('.gsap-glowfly-inner-2', {
+      keyframes: {
+        x: [0, '-15%', '15%', 0],
+        // scale: [1, 0.6, 1.2, 1]
+      },
+      yoyoEase: true,
+      ease: 'sine.inOut',
+      duration: 24,
+      repeat: -1,
+    });
+
+    gsap.to('.gsap-glowfly-inner-2', {
       keyframes: {
         y: [0, '-15%', '15%', 0],
       },
@@ -81,13 +114,13 @@ document.addEventListener(
       repeat: -1,
     });
 
-    gsap.to('.gsap-glowfly-inner', {
+    gsap.to('.gsap-glowfly-inner-2', {
       keyframes: {
         rotation: [0, 360],
       },
       yoyoEase: true,
       ease: 'sine.inOut',
-      duration: 12,
+      duration: 24,
       repeat: -1,
     });
     
