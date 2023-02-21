@@ -569,6 +569,62 @@ video {
   left: 50%;
 }
 
+.bottom-\[-200px\] {
+  bottom: -200px;
+}
+
+.bottom-\[-400px\] {
+  bottom: -400px;
+}
+
+.bottom-\[-300px\] {
+  bottom: -300px;
+}
+
+.bottom-\[-100px\] {
+  bottom: -100px;
+}
+
+.bottom-\[-45\%\] {
+  bottom: -45%;
+}
+
+.bottom-\[-70\%\] {
+  bottom: -70%;
+}
+
+.bottom-\[-80\%\] {
+  bottom: -80%;
+}
+
+.bottom-\[-50\%\] {
+  bottom: -50%;
+}
+
+.bottom-\[-40\%\] {
+  bottom: -40%;
+}
+
+.bottom-\[-30\%\] {
+  bottom: -30%;
+}
+
+.bottom-\[-60\%\] {
+  bottom: -60%;
+}
+
+.bottom-\[-25\%\] {
+  bottom: -25%;
+}
+
+.bottom-\[-10\%\] {
+  bottom: -10%;
+}
+
+.bottom-\[-75\%\] {
+  bottom: -75%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -652,6 +708,18 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .block {
@@ -782,6 +850,42 @@ video {
   height: 400px;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[140\%\] {
+  height: 140%;
+}
+
+.h-\[160\%\] {
+  height: 160%;
+}
+
+.h-\[120\%\] {
+  height: 120%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[150\%\] {
+  height: 150%;
+}
+
 .max-h-\[800px\] {
   max-height: 800px;
 }
@@ -896,6 +1000,34 @@ video {
 
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[60\%px\] {
+  width: 60%px;
+}
+
+.w-\[120\%\] {
+  width: 120%;
+}
+
+.w-\[110\%\] {
+  width: 110%;
+}
+
+.w-\[68\%\] {
+  width: 68%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
 }
 
 .max-w-\[400px\] {
@@ -1085,6 +1217,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-\[100\%\] {
+  border-radius: 100%;
+}
+
 .rounded-l-3xl {
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -1215,6 +1351,30 @@ video {
 .bg-\[\#4F4F4F\] {
   --tw-bg-opacity: 1;
   background-color: rgb(79 79 79 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F1B08C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 176 140 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#9392C8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 146 200 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#59A4BB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(89 164 187 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000000\]\/60 {
+  background-color: rgb(0 0 0 / 0.6);
 }
 
 .fill-current {
@@ -1552,6 +1712,22 @@ video {
   color: rgb(0 0 0 / 0.6);
 }
 
+.text-white\/70 {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
+}
+
+.text-white\/90 {
+  color: rgb(255 255 255 / 0.9);
+}
+
+.text-white\/95 {
+  color: rgb(255 255 255 / 0.95);
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1621,6 +1797,26 @@ video {
 
 .blur-xl {
   --tw-blur: blur(24px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[200px\] {
+  --tw-blur: blur(200px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[100px\] {
+  --tw-blur: blur(100px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[60px\] {
+  --tw-blur: blur(60px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[80px\] {
+  --tw-blur: blur(80px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1774,6 +1970,14 @@ video {
 
 .hover\:text-\[white\]\/80:hover {
   color: rgb(255 255 255 / 0.8);
+}
+
+.hover\:text-white\/90:hover {
+  color: rgb(255 255 255 / 0.9);
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .focus\:border-emerald-500:focus {

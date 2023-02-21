@@ -29,42 +29,62 @@ document.addEventListener(
   function () {
     gsap.registerPlugin(ScrollTrigger);
 
-
-    gsap.to('.gsap-glowfly-outer', {
+    gsap.to('.gsap-glow', {
       keyframes: {
-        x: [0, '-25%', '25%', 0],
-        scale: [1, 0.7, 1.4, 1]
+        y: [0, '-10%', 0],
+        scale: [1, 1.1, 1]
       },
-      yoyoEase: true,
-      ease: 'sine.inOut',
-      duration: 20,
-      repeat: -1,
-    });
-
-    gsap.to('.gsap-glowfly-outer', {
-      keyframes: {
-        y: [0, '-15%', '15%', 0],
-      },
-      yoyoEase: true,
-      ease: 'sine.inOut',
-      duration: 12,
-      repeat: -1,
-    });
-
-    gsap.to('.gsap-glowfly-outer', {
-      keyframes: {
-        rotation: [0, -360],
-      },
+      // ease: 'sine.inOut',
       ease: 'linear',
-      duration: 10,
-      yoyoEase: true,
+      duration: 3,
+      stagger: 1,
       repeat: -1,
     });
 
+    // gsap.to('.gsap-glowfly-outer', {
+    //   keyframes: {
+    //     x: [0, '-25%', '25%', 0],
+    //     scale: [1, 0.7, 1.4, 1]
+    //   },
+    //   yoyoEase: true,
+    //   ease: 'sine.inOut',
+    //   duration: 20,
+    //   repeat: -1,
+    // });
+
+    // gsap.to('.gsap-glowfly-outer', {
+    //   keyframes: {
+    //     y: [0, '-15%', '15%', 0],
+    //   },
+    //   yoyoEase: true,
+    //   ease: 'sine.inOut',
+    //   duration: 12,
+    //   repeat: -1,
+    // });
+
+    // gsap.to('.gsap-glowfly-outer', {
+    //   keyframes: {
+    //     rotation: [0, -360],
+    //   },
+    //   ease: 'linear',
+    //   duration: 10,
+    //   yoyoEase: true,
+    //   repeat: -1,
+    // });
 
     // gsap.to('.gsap-glowfly-inner-1', {
     //   keyframes: {
-    //     x: [0, '-2%', '2%', 0],
+    //     rotation: [0, 360],
+    //   },
+    //   yoyoEase: true,
+    //   ease: 'sine.inOut',
+    //   duration: 24,
+    //   repeat: -1,
+    // });
+
+    // gsap.to('.gsap-glowfly-inner-2', {
+    //   keyframes: {
+    //     x: [0, '-15%', '15%', 0],
     //     // scale: [1, 0.6, 1.2, 1]
     //   },
     //   yoyoEase: true,
@@ -73,9 +93,9 @@ document.addEventListener(
     //   repeat: -1,
     // });
 
-    // gsap.to('.gsap-glowfly-inner-1', {
+    // gsap.to('.gsap-glowfly-inner-2', {
     //   keyframes: {
-    //     y: [0, '-2%', '2%', 0],
+    //     y: [0, '-15%', '15%', 0],
     //   },
     //   yoyoEase: true,
     //   ease: 'sine.inOut',
@@ -83,80 +103,15 @@ document.addEventListener(
     //   repeat: -1,
     // });
 
-    gsap.to('.gsap-glowfly-inner-1', {
-      keyframes: {
-        rotation: [0, 360],
-      },
-      yoyoEase: true,
-      ease: 'sine.inOut',
-      duration: 24,
-      repeat: -1,
-    });
-
-    gsap.to('.gsap-glowfly-inner-2', {
-      keyframes: {
-        x: [0, '-15%', '15%', 0],
-        // scale: [1, 0.6, 1.2, 1]
-      },
-      yoyoEase: true,
-      ease: 'sine.inOut',
-      duration: 24,
-      repeat: -1,
-    });
-
-    gsap.to('.gsap-glowfly-inner-2', {
-      keyframes: {
-        y: [0, '-15%', '15%', 0],
-      },
-      yoyoEase: true,
-      ease: 'sine.inOut',
-      duration: 12,
-      repeat: -1,
-    });
-
-    gsap.to('.gsap-glowfly-inner-2', {
-      keyframes: {
-        rotation: [0, 360],
-      },
-      yoyoEase: true,
-      ease: 'sine.inOut',
-      duration: 24,
-      repeat: -1,
-    });
-    
-
-    // gsap.to('.gsap-glowfly-3', {
+    // gsap.to('.gsap-glowfly-inner-2', {
     //   keyframes: {
-    //     y: [0, '-10%', '10%', 0],
+    //     rotation: [0, 360],
     //   },
-    //   ease: 'power1.inOut',
-    //   duration: 1,
+    //   yoyoEase: true,
+    //   ease: 'sine.inOut',
+    //   duration: 24,
     //   repeat: -1,
     // });
-    
-    // gsap.to('.gsap-glowfly-4', {
-    //   keyframes: {
-    //     y: [0, '-10%', '10%', 0],
-    //   },
-    //   ease: 'power1.inOut',
-    //   duration: 1,
-    //   repeat: -1,
-    // });
-
-
-
-
-
-
-
-
-    // then we can control the whole thing easily...
-    // tl.pause();
-    // tl.resume();
-    // tl.seek(1.5);
-    // tl.reverse();
-
-
 
     barba.init({
       transitions: [
