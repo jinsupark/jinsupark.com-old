@@ -2,554 +2,127 @@
 title: Sample
 layout: layouts/base.njk
 ---
-<header class="fixed top-0 flex items-center w-full px-6 py-6 z-20">
-  <div class="flex-1">
 
-  </div>
-
-  <div class="font-medium text-sm text-[#444444]">
-    © Design and Development by Jin Su Park
-  </div>
-
-  <div class="flex-1 flex justify-end">
-    <ul class="flex items-center gap-4">
-      <li class="flex items-center">
-        <a href="#" class="font-medium text-xs text-black/40 hover:text-black/80">About</a>
-      </li>
-      <li class="flex items-center">
-        <a href="#" class="font-medium text-xs text-black/40 hover:text-black/80">CV</a>
-      </li>
-      <li class="flex items-center">
-        <a href="#" class="font-medium text-xs text-black/40 hover:text-black/80">Twitter</a>
-      </li>
-      <li class="flex items-center ml-2">
-        <button class="flex items-center justify-center w-8 h-8 rounded-md duration-100 hover:bg-black/10">
-          <div class="w-4 h-4 rounded-full overflow-hidden border border-black">
-            <div class="w-[8px] h-4 bg-black"></div>
-          </div>
-        </button>
-      </li>
-    </ul>
-  </div>
-</header>
-
-<main data-barba="container" data-barba-namespace="home">
-  <section class="flex items-end h-[80vh]">
-    
-
-    <div class="flex items-end w-full px-8 xl:px-12 mb-10 xl:mb-12">
-      <div class="flex-1">
-        <ul class="flex items-center -space-x-2 mb-6">
-          <li class="z-40">
-            <a class="flex w-8 h-8 rounded-full border border-white shadow-md overflow-hidden transform duration-200 hover:scale-105">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-full">
-            </a>
-          </li>
-          <li class="z-30">
-            <a class="flex w-8 h-8 rounded-full border border-white shadow-md overflow-hidden transform duration-200 hover:scale-105">
-              <img src="https://randomuser.me/api/portraits/men/86.jpg" class="w-full">
-            </a>
-          </li>
-          <li class="z-20">
-            <a class="flex w-8 h-8 rounded-full border border-white shadow-md overflow-hidden transform duration-200 hover:scale-105">
-              <img src="https://randomuser.me/api/portraits/men/36.jpg" class="w-full">
-            </a>
-          </li>
-          <li class="z-10">
-            <a class="flex w-8 h-8 rounded-full border border-white shadow-md overflow-hidden transform duration-200 hover:scale-105">
-              <img src="https://randomuser.me/api/portraits/men/84.jpg" class="w-full">
-            </a>
-          </li>
-        </ul>
-        <p class="text-sm xl:text-base text-[#070707] max-w-md xl:max-w-lg">Hey thgegegestack designer, coder, and product thinker with branding and graphic design roots. I've spent over fifteen years obsessing over products and ideas that are incredibly refined and well executed.</p>
-      </div>
-      <div class="">
-        <ul class="flex items-center gap-4 xl:gap-7">
-          <li class="flex items-center">
-            <a href="#" class="font-medium text-xs xl:text-sm text-black/40 hover:text-black/80">Published Work</a>
-          </li>
-          <li class="flex items-center">
-            <a href="#" class="font-medium text-xs xl:text-sm text-black/40 hover:text-black/80">Work in progress</a>
-          </li>
-        </ul>
-      </div>
+<main data-barba="container" data-barba-namespace="page">
+  <header class="fixed top-0 flex items-center w-full px-6 md:px-8 pt-6 z-20 lemon">
+    <div class="hidden lg:block flex-1">
+      <ul class="flex items-center gap-5">
+        <li class="flex items-center">
+          <a href="#" class="font-medium text-sm text-[#444444] hover:text-[#444444]/80 duration-200">Published</a>
+        </li>
+        <li class="flex items-center">
+          <a href="#" class="font-medium text-sm text-[#444444]/40 hover:text-[#444444]/80 duration-200">Work in Progress</a>
+        </li>
+      </ul>
     </div>
-  </section>
+
+    <div class="flex-1 flex lg:hidden">
+      <ul class="flex items-center gap-5">
+        <li class="flex items-center">
+          <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">About</a>
+        </li>
+        <li class="flex items-center">
+          <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">CV</a>
+        </li>
+        <li class="flex items-center">
+          <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">Github</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hidden lg:block font-medium text-base leading-none text-black/70">
+      © Selected Works by Jin Su Park
+    </div>
+
+
+
+    <div class="flex-1 flex justify-end">
+      <ul class="flex items-center gap-5">
+        <li class="hidden lg:flex items-center">
+          <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">About</a>
+        </li>
+        <li class="hidden lg:flex items-center">
+          <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">CV</a>
+        </li>
+        <li class="hidden lg:flex items-center">
+          <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">Twitter</a>
+        </li>
+        <li class="hidden lg:flex items-center">
+          <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">Github</a>
+        </li>
+        <li class="flex lg:hidden items-center">
+          <a href="#" class="flex items-center font-medium text-sm text-black/80 hover:text-black/80 duration-200">
+            Published
+            <svg class="fill-current w-3 h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 240L160 384 0 240l0-48 320 0 0 48z"/></svg>
+          </a>
+        </li>
+        <li class="flex items-center lg:ml-1">
+          <button class="w-4 h-4 rounded-full overflow-hidden border border-black">
+            <div class="w-[8px] h-4 bg-black"></div>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="fixed z-[60] left-1/2 translate-x-[-50%] bottom-0 mb-4 md:mb-8 px-4 w-full md:w-auto flex items-center justify-center">
+    <a href="/" class="flex items-center justify-center flex-none w-14 h-14 rounded-full bg-black text-white duration-200 hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+
+    </a>
+  </div>
+
+
+
+  <div class="relative overflow-hidden pt-[144px] sm:pt-[124px] lg:pt-[144px] xl:pt-[164px] 2xl:pt-[184px]">
+    
+    
+    <div class="relative w-[288px] sm:w-[320px] lg:w-[384px] 2xl:w-[600px] mb-[100px] sm:mb-[80px] lg:mb-[100px] xl:mb-[120px] 2xl:mb-[140px] mx-auto aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+      <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+      <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+    </div>
+
+
+    <div class="px-6 md:px-8 mb-12 z-50">
+      <h3 class="max-w-[640px] mx-auto text-black/50 text-base font-regular leading-snug text-justify">
+        Throughout Journey (2023) is a 18 years, growing from a little toddler who painted his walls with sharpies, I still heed my curiosity to build and create. Not sure if calling myself a minimalist matters, but the concept helps me to simplify my life and make room for what I think is essential: relationships, creation, solitude and chai latte.
+      </h3>
+    </div>
+
+    {# <div class="md:hidden relative z-10 p-6">
+      <ul class="flex items-center gap-5">
+        <li class="flex items-center">
+          <a href="#" class="font-medium text-sm text-[black] hover:text-[black]/80 duration-200">Published</a>
+        </li>
+        <li class="flex items-center">
+          <a href="#" class="font-medium text-sm text-[black]/30 hover:text-[black]/80 duration-200">Work in Progress</a>
+        </li>
+      </ul>
+    </div> #}
+
+    {# <div class="hidden md:block absolute left-1/2 translate-x-[-50%] md:text-center w-full max-w-[700px] p-6 mix-blend-overlay text-black text-base md:text-xl leading-snug md:leading-7">
+      Throughout the past 18 years, growing from a little toddler who painted his walls with sharpies, I still heed my curiosity to build and create. Not sure if calling myself a minimalist matters, but the concept helps me to simplify my life and make room for what I think is.
+    </div> #}
+    {# <div class="absolute left-1/2 translate-x-[-50%] md:text-center w-full max-w-[780px] p-6 text-black/[.12] text-base md:text-xl leading-snug md:leading-7">
+      Throughout the past 18 years, growing from a little toddler who painted his walls with sharpies, I still heed my curiosity to build and create. Not sure if calling myself a minimalist matters, but the concept helps me to simplify my life and make room for what I think is essential: relationships, creation, solitude and chai latte.
+    </div> #}
+  </div>
 
   <section class="w-full">
-    <ul class="grid grid-cols-4 gap-1">
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#F3F3F3] overflow-hidden">
-        <a href="/works/sample" class="relative flex aspect-[4/3] group/thumbnail">
-          <img class="absolute top-0 left-0" src="/assets/img/projects/sample/sample-thumb.png">
-          <img class="absolute top-0 left-0 opacity-0 duration-[.6s] scale-125 group-hover/thumbnail:scale-100 group-hover/thumbnail:opacity-100 blur-md group-hover/thumbnail:blur-none" src="/assets/img/projects/sample/sample-thumb-hover.jpg">
-          <div class="absolute bottom-0 left-0 text-sm text-white font-medium transform translate-y-8 group-hover/thumbnail:translate-y-0 opacity-0 group-hover/thumbnail:opacity-100 duration-[0.6s] p-6">
-            KI Services Identity Design<br>
-            <span class="opacity-40">Branding • 2017</span>
-          </div>
-        </a>
-      </li>
-      
-    </ul>
+    <div class="grid grid-cols-2 gap-1 mb-10">
+      <div>
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3267&q=80" class="">
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3267&q=80" class="">
+      </div>
+    </div>
+
+    <div class="px-6 md:px-8 mb-10 z-50">
+      <h3 class="max-w-[640px] mx-auto text-black/50 text-base font-regular leading-snug text-justify">
+        Hey there, I am an 35 years, growing from a little toddler who painted his walls with sharpies, I still heed my curiosity to build and create. Not sure if calling myself a minimalist matters, but the concept helps me to simplify my life and make room for what I think is essential: relationships, creation, solitude and chai latte.
+      </h3>
+    </div>
   </section>
+  
 </main>

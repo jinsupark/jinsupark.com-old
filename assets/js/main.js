@@ -109,23 +109,54 @@ document.addEventListener(
     //   repeat: -1,
     // });
 
+    
+
     barba.init({
       transitions: [
         {
-          name: 'opacity-transition',
+          name: 'home',
+          to: { namespace: ['home'] },
           leave(data) {
-            return gsap.to(data.current.container, {
+            let fadeOutAnimation = gsap.to(data.current.container, {
               opacity: 0,
+              duration: 1,
             });
+            return fadeOutAnimation;
           },
-          enter(data) {
-            return gsap.from(data.next.container, {
+          after(data) {
+            let fadeInAnimation = gsap.from(data.next.container, {
               opacity: 0,
+              duration: 1,
             });
+            return fadeInAnimation;
+          },
+        },
+        {
+          name: 'page',
+          to: { namespace: ['page'] },
+          leave(data) {
+            let fadeOutAnimation = gsap.to(data.current.container, {
+              opacity: 0,
+              duration: 1,
+            });
+            return fadeOutAnimation;
+          },
+          after(data) {
+            window.scrollTo(0, 0);
+            let fadeInAnimation = gsap.from(data.next.container, {
+              opacity: 0,
+              duration: 1,
+            });
+            return fadeInAnimation;
           },
         },
       ],
     });
+
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    }
+
   },
   false
 );

@@ -2,6 +2,7 @@ module.exports = {
   content: [
     './_includes/**/*.{njk,js}',
     './assets/**/*.{njk,js}',
+    './works/**/*.{njk,js}',
     './*.{njk,js}',
   ],
   theme: {
