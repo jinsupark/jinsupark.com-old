@@ -1899,6 +1899,22 @@ video {
   padding-top: 70px;
 }
 
+.pt-\[110px\] {
+  padding-top: 110px;
+}
+
+.pt-\[105px\] {
+  padding-top: 105px;
+}
+
+.pt-\[104x\] {
+  padding-top: 104x;
+}
+
+.pt-\[104px\] {
+  padding-top: 104px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2569,6 +2585,10 @@ video {
     padding-top: 90px;
   }
 
+  .sm\:pt-\[124px\] {
+    padding-top: 124px;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2766,6 +2786,10 @@ video {
     margin-bottom: 100px;
   }
 
+  .lg\:mb-\[140px\] {
+    margin-bottom: 140px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2818,9 +2842,21 @@ video {
   .lg\:pt-\[160px\] {
     padding-top: 160px;
   }
+
+  .lg\:pt-\[144px\] {
+    padding-top: 144px;
+  }
+
+  .lg\:pt-\[184px\] {
+    padding-top: 184px;
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:mb-\[120px\] {
+    margin-bottom: 120px;
+  }
+
   .xl\:aspect-\[4\/3\] {
     aspect-ratio: 4/3;
   }
@@ -2896,9 +2932,17 @@ video {
   .xl\:pt-\[256px\] {
     padding-top: 256px;
   }
+
+  .xl\:pt-\[164px\] {
+    padding-top: 164px;
+  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:mb-\[140px\] {
+    margin-bottom: 140px;
+  }
+
   .\32xl\:w-\[400px\] {
     width: 400px;
   }
@@ -2937,5 +2981,9 @@ video {
 
   .\32xl\:pt-\[170px\] {
     padding-top: 170px;
+  }
+
+  .\32xl\:pt-\[184px\] {
+    padding-top: 184px;
   }
 }
