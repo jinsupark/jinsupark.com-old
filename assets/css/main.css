@@ -1262,6 +1262,10 @@ video {
   width: 110px;
 }
 
+.w-\[256px\] {
+  width: 256px;
+}
+
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1860,6 +1864,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-sans {
@@ -2486,6 +2494,10 @@ video {
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
+  }
+
+  .sm\:w-\[320px\] {
+    width: 320px;
   }
 
   .sm\:p-12 {
