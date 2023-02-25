@@ -1286,6 +1286,14 @@ video {
   width: 256px;
 }
 
+.w-\[288x\] {
+  width: 288x;
+}
+
+.w-\[288px\] {
+  width: 288px;
+}
+
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1913,6 +1921,10 @@ video {
 
 .pt-\[104px\] {
   padding-top: 104px;
+}
+
+.pt-\[144px\] {
+  padding-top: 144px;
 }
 
 .text-center {
