@@ -814,6 +814,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-\[65px\] {
+  margin-bottom: 65px;
+}
+
 .block {
   display: block;
 }
@@ -2762,6 +2766,10 @@ video {
   .lg\:pt-\[190px\] {
     padding-top: 190px;
   }
+
+  .lg\:pt-\[160px\] {
+    padding-top: 160px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2865,5 +2873,21 @@ video {
 
   .\32xl\:pt-\[200px\] {
     padding-top: 200px;
+  }
+
+  .\32xl\:pt-\[19px\] {
+    padding-top: 19px;
+  }
+
+  .\32xl\:pt-\[190px\] {
+    padding-top: 190px;
+  }
+
+  .\32xl\:pt-\[180px\] {
+    padding-top: 180px;
+  }
+
+  .\32xl\:pt-\[170px\] {
+    padding-top: 170px;
   }
 }
