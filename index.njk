@@ -12,13 +12,13 @@ layout: layouts/base.njk
   <div class="fixed top-0 right-0 mt-6 mr-6 sm:mt-8 sm:mr-8 z-40">
     <ul class="flex items-center gap-5">
       <li class="flex items-center">
-        <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">About</a>
+        <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 duration-200">About</a>
       </li>
       <li class="hidden lg:flex items-center">
-        <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">Github</a>
+        <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 duration-200">Github</a>
       </li>
       <li class="hidden lg:flex items-center">
-        <a href="#" class="font-medium text-sm text-black/40 hover:text-black/80 duration-200">CV</a>
+        <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 duration-200">CV</a>
       </li>
       
       {# <li class="flex lg:hidden items-center">
@@ -37,7 +37,7 @@ layout: layouts/base.njk
 
   <div class="fixed z-[60] left-1/2 translate-x-[-50%] bottom-0 mb-4 md:mb-8 px-4 overflow-auto w-full flex items-center justify-center">
     <div class="flex items-center rounded-md bg-black shadow-lg overflow-auto">
-      <ul class="flex items-center whitespace-nowrap pl-5">
+      <ul class="flex items-center whitespace-nowrap pl-5 overflow-auto">
         <li class="flex items-center">
           <a href="#" class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white hover:text-white/80 duration-200">All</a>
         </li>
@@ -57,14 +57,17 @@ layout: layouts/base.njk
           <a href="#" class="h-[48px] md:h-[42px] pr-5 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Art Direction</a>
         </li>
       </ul>
-      <ul class="flex items-center">
+      <div class="flex-none w-px h-6 bg-white/50">
+
+      </div>
+      <ul class="flex items-center px-3">
         <li class="flex items-center">
-          <a href="#" class="h-[42px] flex items-center font-medium text-sm text-white hover:text-white/80 duration-200">
+          <a href="#" @click="gridCols = 1" :class="gridCols == 1 ? 'text-white hover:text-white/80' : 'text-white/30'" class="h-[48px] md:h-[42px] px-2 flex items-center font-medium text-sm duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32H448V480H0V32z"/></svg>
           </a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] flex items-center font-medium text-sm text-white hover:text-white/80 duration-200">
+          <a href="#" @click="gridCols = 2" :class="gridCols == 2 ? 'text-white hover:text-white/80' : 'text-white/30'" class="h-[48px] md:h-[42px] px-2 flex items-center font-medium text-sm duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 32H0V224H192V32zm0 256H0V480H192V288zM256 32V224H448V32H256zM448 288H256V480H448V288z"/></svg>
           </a>
         </li>
@@ -97,7 +100,7 @@ layout: layouts/base.njk
   
 
   {# Circle #}
-  <div class="relative overflow-hidden aspect-square flex items-center justify-center">
+  <div class="relative overflow-hidden aspect-square md:aspect-auto py-0 md:py-[100px] flex items-center justify-center">
     <div class="relative w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[380px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white to-white/0"></div>
   </div>
 

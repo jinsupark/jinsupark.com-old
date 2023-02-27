@@ -686,6 +686,14 @@ video {
   height: 1.5rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -732,6 +740,10 @@ video {
 
 .w-\[340px\] {
   width: 340px;
+}
+
+.w-px {
+  width: 1px;
 }
 
 .max-w-\[640px\] {
@@ -809,6 +821,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-auto {
@@ -891,6 +907,18 @@ video {
   background-color: rgb(244 243 241 / var(--tw-bg-opacity));
 }
 
+.bg-white\/40 {
+  background-color: rgb(255 255 255 / 0.4);
+}
+
+.bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
+}
+
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -968,6 +996,26 @@ video {
   padding-bottom: 60px;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1014,6 +1062,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .font-medium {
@@ -1102,6 +1154,14 @@ video {
 .text-slate-500 {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
+}
+
+.text-white\/30 {
+  color: rgb(255 255 255 / 0.3);
 }
 
 .underline {
@@ -1274,6 +1334,10 @@ video {
     display: flex;
   }
 
+  .sm\:aspect-auto {
+    aspect-ratio: auto;
+  }
+
   .sm\:w-\[320px\] {
     width: 320px;
   }
@@ -1343,6 +1407,10 @@ video {
     display: none;
   }
 
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
+
   .md\:h-\[42px\] {
     height: 42px;
   }
@@ -1370,6 +1438,11 @@ video {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:py-\[100px\] {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .md\:text-center {
