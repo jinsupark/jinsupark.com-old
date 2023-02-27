@@ -1,26 +1,22 @@
 // Initialize AlpineJS
 document.addEventListener('alpine:init', () => {
-
-});
-
-
-
-window.addEventListener('load', (event) => {
-  gsap.to('.gsap-hero-map', {
-    // scrollTrigger: {
-    //   trigger: 'body',
-    //   start: '0',
-    //   end: '400px',
-    //   // markers: true,
-    //   scrub: true,
-    //   once: true
-    // },
-    y: 2200,
-    ease: 'none',
-    duration: 120,
-    repeat: -1,
-  });
-  // console.log('page is fully loaded');
+  Alpine.data('main', () => ({
+    gridCols: 2,
+    darkMode: false,
+    toggleDarkMode() {
+      if (this.darkMode == false) {
+        document.querySelector('html').classList.toggle('dark');
+        document.querySelector('html').classList.remove('bg-[#EDEDED]');
+        document.querySelector('html').classList.add('bg-[#131313]');
+        this.darkMode = !this.darkMode;
+      } else {
+        document.querySelector('html').classList.toggle('dark');
+        document.querySelector('html').classList.remove('bg-[#131313]');
+        document.querySelector('html').classList.add('bg-[#EDEDED]');
+        this.darkMode = !this.darkMode;
+      }
+    }
+  }));
 });
 
 

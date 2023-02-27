@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   content: [
     './_includes/**/*.{njk,js}',
     './assets/**/*.{njk,js}',
@@ -41,6 +42,7 @@ module.exports = {
         bold: 700,
       },
       colors: {
+        // 'background-light': 
         // 'primary': {
         //   50: '#ecfdf5',
         //   50: '#d1fae5',
