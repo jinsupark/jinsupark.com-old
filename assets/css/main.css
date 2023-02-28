@@ -1198,6 +1198,11 @@ video {
   margin-left: 5%;
 }
 
+.dark .dark\:border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .dark .dark\:bg-\[\#000000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1211,6 +1216,39 @@ video {
 .dark .dark\:bg-\[\#131313\] {
   --tw-bg-opacity: 1;
   background-color: rgb(19 19 19 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\#181818\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-\[\#121212\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-black\/40 {
+  background-color: rgb(0 0 0 / 0.4);
+}
+
+.dark .dark\:bg-black\/20 {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.dark .dark\:from-white\/20 {
+  --tw-gradient-from: rgb(255 255 255 / 0.2);
+  --tw-gradient-to: rgb(255 255 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.dark .dark\:to-white\/0 {
+  --tw-gradient-to: rgb(255 255 255 / 0);
 }
 
 .dark .dark\:text-black {
@@ -1228,6 +1266,39 @@ video {
 
 .dark .dark\:text-white\/50 {
   color: rgb(255 255 255 / 0.5);
+}
+
+.dark .dark\:text-black\/40 {
+  color: rgb(0 0 0 / 0.4);
+}
+
+.dark .dark\:text-black\/30 {
+  color: rgb(0 0 0 / 0.3);
+}
+
+.dark .dark\:text-black\/10 {
+  color: rgb(0 0 0 / 0.1);
+}
+
+.dark .dark\:text-black\/80 {
+  color: rgb(0 0 0 / 0.8);
+}
+
+.dark .dark\:text-white\/90 {
+  color: rgb(255 255 255 / 0.9);
+}
+
+.dark .dark\:text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
+}
+
+.dark .dark\:text-black\/20 {
+  color: rgb(0 0 0 / 0.2);
+}
+
+.dark .dark\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dark .dark\:decoration-black\/60 {
@@ -1248,6 +1319,10 @@ video {
 
 .dark .dark\:hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
+}
+
+.dark .dark\:hover\:text-black\/60:hover {
+  color: rgb(0 0 0 / 0.6);
 }
 
 .dark .dark\:hover\:decoration-black\/60:hover {
@@ -1277,6 +1352,10 @@ video {
 
   .sm\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-\[320px\] {

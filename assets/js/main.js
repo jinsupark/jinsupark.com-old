@@ -7,11 +7,11 @@ document.addEventListener('alpine:init', () => {
       if (this.darkMode == false) {
         document.querySelector('html').classList.toggle('dark');
         document.querySelector('html').classList.remove('bg-[#EDEDED]');
-        document.querySelector('html').classList.add('bg-[#131313]');
+        document.querySelector('html').classList.add('bg-[#000000]');
         this.darkMode = !this.darkMode;
       } else {
         document.querySelector('html').classList.toggle('dark');
-        document.querySelector('html').classList.remove('bg-[#131313]');
+        document.querySelector('html').classList.remove('bg-[#000000]');
         document.querySelector('html').classList.add('bg-[#EDEDED]');
         this.darkMode = !this.darkMode;
       }
