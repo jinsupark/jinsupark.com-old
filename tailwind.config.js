@@ -60,7 +60,7 @@ module.exports = {
   },
   safelist: ['@import'],
   plugins: [
-    // require('@tailwindcss/typography'),
+    require('@tailwindcss/typography'),
     // require('@tailwindcss/forms'),
     // require('@tailwindcss/line-clamp'),
     // require('@tailwindcss/aspect-ratio'),

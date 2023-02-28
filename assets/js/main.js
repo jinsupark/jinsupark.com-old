@@ -25,13 +25,6 @@ document.addEventListener(
   function () {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('.gsap-burn', {
-      opacity: 100,
-      // ease: 'sine.inOut',
-      ease: 'power4.in',
-      duration: 24,
-      stagger: 4,
-    });
 
     // gsap.to('.gsap-glowfly-outer', {
     //   keyframes: {
@@ -44,106 +37,92 @@ document.addEventListener(
     //   repeat: -1,
     // });
 
-    // gsap.to('.gsap-glowfly-outer', {
-    //   keyframes: {
-    //     y: [0, '-15%', '15%', 0],
-    //   },
-    //   yoyoEase: true,
-    //   ease: 'sine.inOut',
-    //   duration: 12,
-    //   repeat: -1,
-    // });
-
-    // gsap.to('.gsap-glowfly-outer', {
-    //   keyframes: {
-    //     rotation: [0, -360],
-    //   },
-    //   ease: 'linear',
-    //   duration: 10,
-    //   yoyoEase: true,
-    //   repeat: -1,
-    // });
-
-    // gsap.to('.gsap-glowfly-inner-1', {
-    //   keyframes: {
-    //     rotation: [0, 360],
-    //   },
-    //   yoyoEase: true,
-    //   ease: 'sine.inOut',
-    //   duration: 24,
-    //   repeat: -1,
-    // });
-
-    // gsap.to('.gsap-glowfly-inner-2', {
-    //   keyframes: {
-    //     x: [0, '-15%', '15%', 0],
-    //     // scale: [1, 0.6, 1.2, 1]
-    //   },
-    //   yoyoEase: true,
-    //   ease: 'sine.inOut',
-    //   duration: 24,
-    //   repeat: -1,
-    // });
-
-    // gsap.to('.gsap-glowfly-inner-2', {
-    //   keyframes: {
-    //     y: [0, '-15%', '15%', 0],
-    //   },
-    //   yoyoEase: true,
-    //   ease: 'sine.inOut',
-    //   duration: 12,
-    //   repeat: -1,
-    // });
-
-    // gsap.to('.gsap-glowfly-inner-2', {
-    //   keyframes: {
-    //     rotation: [0, 360],
-    //   },
-    //   yoyoEase: true,
-    //   ease: 'sine.inOut',
-    //   duration: 24,
-    //   repeat: -1,
-    // });
-
-    
 
     barba.init({
       transitions: [
         {
           name: 'home',
-          to: { namespace: ['home'] },
+          to: { namespace: ['page'] },
           leave(data) {
-            let fadeOutAnimation = gsap.to(data.current.container, {
+            let header = gsap.to('.gsap-header', {
+              y: -100,
               opacity: 0,
-              duration: 1,
+              duration: .4,
             });
-            return fadeOutAnimation;
+
+            let content = gsap.to('.gsap-content', {
+              opacity: 0,
+              duration: 0.4,
+            });
+
+            let footer = gsap.to('.gsap-footer', {
+              y: 100,
+              opacity: 0,
+              duration: 0.4,
+            });
+            return header, content, footer;
           },
           after(data) {
-            let fadeInAnimation = gsap.from(data.next.container, {
+            let header = gsap.from('.gsap-header', {
+              y: -100,
               opacity: 0,
-              duration: 1,
+              duration: 0.4,
             });
-            return fadeInAnimation;
+
+            let content = gsap.from('.gsap-content', {
+              opacity: 0,
+              duration: 0.4,
+            });
+
+            let footer = gsap.from('.gsap-footer', {
+              y: 100,
+              opacity: 0,
+              duration: 0.4,
+            });
+            return header, content, footer;
           },
         },
         {
           name: 'page',
-          to: { namespace: ['page'] },
+          to: { namespace: ['home'] },
           leave(data) {
-            let fadeOutAnimation = gsap.to(data.current.container, {
+            let header = gsap.to('.gsap-header', {
+              y: -100,
               opacity: 0,
-              duration: 1,
+              duration: 0.4,
             });
-            return fadeOutAnimation;
+
+            let content = gsap.to('.gsap-content', {
+              opacity: 0,
+              duration: 0.4,
+            });
+
+            let footer = gsap.to('.gsap-footer', {
+              y: 100,
+              opacity: 0,
+              duration: 0.4,
+            });
+            return header, content, footer;
           },
           after(data) {
             window.scrollTo(0, 0);
-            let fadeInAnimation = gsap.from(data.next.container, {
+            let header = gsap.from('.gsap-header', {
+              y: -100,
               opacity: 0,
-              duration: 1,
+              duration: 0.4,
             });
-            return fadeInAnimation;
+            
+            let content = gsap.from('.gsap-content', {
+              opacity: 0,
+              duration: .4,
+            });
+
+            let footer = gsap.from('.gsap-footer', {
+              y: 100,
+              opacity: 0,
+              duration: 0.4,
+            });
+            return header, content, footer;
           },
         },
       ],

@@ -6,11 +6,11 @@ layout: layouts/base.njk
 
 
 <main data-barba="container" data-barba-namespace="home">
-  <h1 class="fixed top-0 left-0 mt-6 ml-6 sm:mt-8 sm:ml-8 z-40 font-medium text-base leading-none text-black/70 dark:text-white/80">
+  <h1 class="fixed top-0 left-0 mt-6 ml-6 sm:mt-8 sm:ml-8 z-40 font-medium text-base leading-none text-black/70 dark:text-white/80 gsap-header">
     © Selected Works by Jin <span class="hidden md:inline">Su Park</span>
   </h1>
 
-  <div class="fixed top-0 right-0 mt-6 mr-6 sm:mt-8 sm:mr-8 z-40">
+  <div class="fixed top-0 right-0 mt-6 mr-6 sm:mt-8 sm:mr-8 z-40 gsap-header">
     <ul class="flex items-center gap-5">
       <li class="flex items-center">
         <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">About</a>
@@ -36,8 +36,8 @@ layout: layouts/base.njk
     </ul>
   </div>
 
-  <div class="fixed z-[60] left-1/2 translate-x-[-50%] bottom-0 mb-4 md:mb-8 px-4 overflow-auto w-full flex items-center justify-center">
-    <div class="flex items-center rounded-md bg-black/70 dark:bg-white/20 backdrop-blur-md shadow-lg overflow-auto">
+  <div class="fixed z-[60] left-1/2 translate-x-[-50%] bottom-0 mb-4 md:mb-8 px-4 overflow-auto flex items-center justify-center gsap-footer">
+    <div class="flex items-center rounded-md bg-[#535353] shadow-lg overflow-auto">
       <ul class="flex items-center whitespace-nowrap pl-5 overflow-auto">
         <li class="flex items-center">
           <a href="#" class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white hover:text-white/80 duration-200">All</a>
@@ -77,7 +77,7 @@ layout: layouts/base.njk
     </div>
   </div>
 
-  <div class="hidden md:flex fixed z-[60] right-0 bottom-0 mb-8 mr-8 items-center">
+  <div class="hidden md:flex fixed z-[60] right-0 bottom-0 mb-8 mr-8 items-center gsap-footer">
     <div class="rounded-md bg-white dark:bg-black/80 backdrop-blur-md shadow-lg">
       <ul class="flex items-center gap-4 px-4">
         <li class="flex items-center">
@@ -100,290 +100,293 @@ layout: layouts/base.njk
   </div>
   
 
-  {# Circle #}
-  <div class="mt-[12vw] sm:mt-0"></div>
-  <div class="relative overflow-hidden aspect-square md:aspect-auto py-0 md:py-[100px] flex items-center justify-center">
-    <div class="relative w-full max-w-[320px] sm:max-w-[448px] lg:max-w-[380px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white to-white/0 dark:from-white/20 dark:to-white/0"></div>
-  </div>
-
-  <section class="w-full bg-white dark:bg-[#121212]">
-    <div class="grid grid-cols-1 md:grid-cols-2 px-6 md:px-8 py-8">
-      <h3 class="mb-8 md:mb-0 max-w-[512px] text-black/50 dark:text-white/50 text-base font-regular leading-snug">
-        Carl Beaverson is an award-winning Web Developer, currently living & working abroad. A partner at <a class="underline decoration-black/40 hover:decoration-black/60 dark:decoration-white/40 dark:hover:decoration-white/60">Groundcrew</a>, his work is focused on creating bespoke, effective & engaging digital experiences.
-      </h3>
-      <div class="md:flex justify-end items-center">
-        <ul class="grid grid-cols-2 md:gap-20">
-          <li>
-            <div class="text-xl font-medium text-black/80 dark:text-white/80">65</div>
-            <div class="text-sm font-medium text-black/50 dark:text-white/50">Projects Published</div>
-          </li>
-          <li>
-            <div class="text-xl font-medium text-black/80 dark:text-white/80">4k+</div>
-            <div class="text-sm font-medium text-black/50 dark:text-white/50">Code Contriutions</div>
-          </li>
-        </ul>
-      </div>
+  
+  <section class="gsap-content">
+    {# Circle #}
+    <div class="mt-[12vw] sm:mt-0"></div>
+    <div class="relative overflow-hidden aspect-square md:aspect-auto py-0 md:py-[100px] flex items-center justify-center">
+      <div class="relative w-full max-w-[320px] sm:max-w-[448px] lg:max-w-[380px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white to-white/0 dark:from-white/20 dark:to-white/0"></div>
     </div>
 
-    <ul class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-0.5 sm:gap-1">
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      <li class="bg-[#EDEDED] dark:bg-[#181818] overflow-hidden">
-        <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
-          <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-            <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
-            <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-          </div>
-        </a>
-      </li>
-      
-    </ul>
+    <div class="w-full bg-white dark:bg-[#181818]">
+      <div class="grid grid-cols-1 md:grid-cols-2 px-6 md:px-8 py-8">
+        <h3 class="mb-8 md:mb-0 w-full max-w-[512px] text-black/50 dark:text-white/50 text-base font-regular leading-snug">
+          Carl Beaverson is an award-winning Web Developer, currently living & working abroad. A partner at <a class="underline decoration-black/40 hover:decoration-black/60 dark:decoration-white/40 dark:hover:decoration-white/60">Groundcrew</a>, his work is focused on creating bespoke, effective & engaging digital experiences.
+        </h3>
+        <div class="md:flex justify-end items-center">
+          <ul class="grid grid-cols-2 md:gap-20">
+            <li>
+              <div class="text-xl font-medium text-black/80 dark:text-white/80">65</div>
+              <div class="text-sm font-medium text-black/50 dark:text-white/50">Projects Published</div>
+            </li>
+            <li>
+              <div class="text-xl font-medium text-black/80 dark:text-white/80">4k+</div>
+              <div class="text-sm font-medium text-black/50 dark:text-white/50">Code Contriutions</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-0.5 sm:gap-1">
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden">
+          <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
+            <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
+              <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
+              <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
   </section>
   
 </main>

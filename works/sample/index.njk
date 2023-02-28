@@ -6,11 +6,11 @@ layout: layouts/base.njk
 
 
 <main data-barba="container" data-barba-namespace="page">
-  <h1 class="fixed top-0 left-0 mt-6 ml-6 sm:mt-8 sm:ml-8 z-40 font-medium text-base leading-none text-black/70 dark:text-white/80">
+  <h1 class="fixed top-0 left-0 mt-6 ml-6 sm:mt-8 sm:ml-8 z-40 font-medium text-base leading-none text-black/70 dark:text-white/80 gsap-header">
     © Through All Seasons
   </h1>
 
-  <div class="fixed top-0 right-0 mt-6 mr-6 sm:mt-8 sm:mr-8 z-40">
+  <div class="fixed top-0 right-0 mt-6 mr-6 sm:mt-8 sm:mr-8 z-40 gsap-header">
     <ul class="flex items-center gap-5">
       <li class="flex items-center">
         <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">About</a>
@@ -36,9 +36,9 @@ layout: layouts/base.njk
     </ul>
   </div>
 
-  <div class="fixed z-[60] left-1/2 translate-x-[-50%] bottom-0 mb-4 md:mb-8 px-4 w-full md:w-auto flex items-center justify-center">
-    <a href="/" class="relative flex items-center justify-center flex-none w-14 h-14 text-white dark:text-black">
-      <div class="absolute top-0 left-0 flex-none w-14 h-14 rounded-full bg-black dark:bg-white dark:text-black duration-200 hover:scale-110">
+  <div class="fixed z-[60] left-1/2 translate-x-[-50%] bottom-0 mb-4 md:mb-8 px-4 w-full md:w-auto flex items-center justify-center gsap-footer">
+    <a href="/" class="relative flex items-center justify-center flex-none w-14 h-14 text-white">
+      <div class="absolute top-0 left-0 flex-none w-14 h-14 rounded-full bg-[#535353] duration-200 hover:scale-110">
 
       </div>
       <svg class="relative z-10 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -47,36 +47,52 @@ layout: layouts/base.njk
   </div>
 
 
-  {# Circle #}
-  <div class="mt-[12vw] sm:mt-0"></div>
-  <div class="relative overflow-hidden aspect-square md:aspect-auto py-0 md:py-[100px] flex items-center justify-center">
-    {# <div class="relative w-full max-w-[320px] sm:max-w-[448px] lg:max-w-[380px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white to-white/0 dark:from-white/20 dark:to-white/0"></div> #}
+  <section class="gsap-content">
 
-    <div class="relative w-full max-w-[320px] sm:max-w-[448px] lg:max-w-[380px] 2xl:max-w-[600px] aspect-square mx-auto rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
-      <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
-      <img src="https://via.placeholder.com/150" class="absolute top-0 left-0 mt-[5%] ml-[15%] max-w-none w-[150%] h-[150%] group-hover/thumb:ml-[5%] duration-200">
-    </div>
-  </div>
-
-
-
-  <section class="w-full">
-    <div class="grid grid-cols-2 gap-1 mb-10">
-      <div>
-        <img src="https://cdn.dribbble.com/userupload/4797787/file/original-dd855009ad53809455f97f6558cc6de0.jpg?compress=1&resize=1504x838" class="aspect-[4/3] object-cover">
-      </div>
-      <div>
-        <img src="https://cdn.dribbble.com/userupload/4606557/file/original-ad83b97ed87fa135e039e4680755da2d.jpg?compress=1&resize=1504x1003" class="aspect-[4/3] object-cover">
-      </div>
-
-      <div class="col-span-2">
-        <img src="https://cdn.dribbble.com/userupload/4606338/file/original-951c8a79bcf94bc90de579d733add00d.png?compress=1&resize=1504x846" class="aspect-[4/3] object-cover">
-      </div>
+    <div class="px-6 sm:px-8 mt-[120px] mb-[36px]">
+      <h2 class="text-4xl font-medium text-black/70">Redesigning a brand <br>new Nike store</h2>
     </div>
 
-    
+    <div class="px-6 sm:px-8 w-full max-w-[680px] mb-[140px]">
+      <div>
+        <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
+          Aliquam tristique purus non magna condimentum consequat. In quam neque, lobortis nec tortor nec, tempus finibus justo. Duis dignissim ultricies elit aliquam mattis. Morbi sit amet massa magna. Phasellus finibus velit sit amet est condimentum auctor. In non blandit tellus. Etiam mattis dignissim purus, sed pulvinar nibh vehicula vitae. Vestibulum mattis consectetur vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ullamcorper pretium tempor.
+        </p>
+        <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
+          Sed hendrerit purus eros, eget viverra nibh congue sed.
+          Nunc in arcu gravida, euismod urna at, ultricies nulla. Pellentesque nibh odio, consectetur ut urna maximus, euismod aliquam nibh. Cras feugiat non ipsum sit amet ultricies. Integer luctus, massa id maximus egestas, lacus turpis consectetur purus, vitae semper velit tellus vitae justo. Phasellus interdum eu arcu et feugiat.
+        </p>
+      </div>
+      <ul class="flex flex-col sm:flex-row gap-6 sm:gap-20 mt-14">
+        <li>
+          <div class="text-sm font-medium text-black/50 dark:text-white/50">Publish Year</div>
+          <div class="text-lg font-medium text-black/80 dark:text-white/80">2022</div>
+        </li>
+        <li>
+          <div class="text-sm font-medium text-black/50 dark:text-white/50">Project Categpru</div>
+          <div class="text-lg font-medium text-black/80 dark:text-white/80">Branding<div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-full">
+      <div class="grid grid-cols-2 gap-1">
+        <div>
+          <img src="https://cdn.dribbble.com/userupload/4797787/file/original-dd855009ad53809455f97f6558cc6de0.jpg?compress=1&resize=1504x838" class="w-full aspect-[4/3] object-cover">
+        </div>
+        <div>
+          <img src="https://cdn.dribbble.com/userupload/4606557/file/original-ad83b97ed87fa135e039e4680755da2d.jpg?compress=1&resize=1504x1003" class="w-full aspect-[4/3] object-cover">
+        </div>
+
+        <div class="col-span-2">
+          <img src="https://cdn.dribbble.com/userupload/4606338/file/original-951c8a79bcf94bc90de579d733add00d.png?compress=1&resize=1504x846" class="w-full aspect-[4/3] object-cover">
+        </div>
+      </div>
+
+      
 
 
-  </section>
+    </div>
+  </section
   
 </main>
