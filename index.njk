@@ -40,22 +40,22 @@ layout: layouts/base.njk
     <div class="flex items-center rounded-md bg-[#535353] shadow-lg overflow-auto pointer-events-auto">
       <ul class="flex flex-1 items-center whitespace-nowrap pl-5 overflow-auto">
         <li class="flex items-center">
-          <a href="#" class="h-[42px] pr-6 flex items-center font-medium text-sm text-white hover:text-white/80 duration-200">All</a>
+          <a href="#" class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white hover:text-white/80 duration-200">All</a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Product</a>
+          <a href="#" class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Product</a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">UI/UX</a>
+          <a href="#" class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">UI/UX</a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Identity</a>
+          <a href="#" class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Identity</a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Development</a>
+          <a href="#" class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Development</a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] pr-5 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Art Direction</a>
+          <a href="#" class="h-[48px] md:h-[42px] pr-5 flex items-center font-medium text-sm text-white/40 hover:text-white/80 duration-200">Art Direction</a>
         </li>
       </ul>
       <div class="flex-none w-px h-6 bg-white/40 dark:bg-black/20">
@@ -63,12 +63,12 @@ layout: layouts/base.njk
       </div>
       <ul class="flex flex-none sm:hidden items-center px-2">
         <li class="flex items-center">
-          <a href="#" @click="gridCols = 1" :class="gridCols == 1 ? 'text-white hover:text-white/80 dark:text-black dark:hover:text-black/80' : 'text-white/30 dark:text-black/20'" class="h-[42px] px-2 flex items-center font-medium text-sm duration-200">
+          <a href="#" @click="gridCols = 1" :class="gridCols == 1 ? 'text-white hover:text-white/80' : 'text-white/30'" class="h-[48px] md:h-[42px] px-2 flex items-center font-medium text-sm duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32H448V480H0V32z"/></svg>
           </a>
         </li>
         <li class="flex items-center">
-          <a href="#" @click="gridCols = 2" :class="gridCols == 2 ? 'text-white hover:text-white/80 dark:text-black dark:hover:text-black/80' : 'text-white/30 dark:text-black/20'" class="h-[42px] px-2 flex items-center font-medium text-sm duration-200">
+          <a href="#" @click="gridCols = 2" :class="gridCols == 2 ? 'text-white hover:text-white/80' : 'text-white/30'" class="h-[48px] md:h-[42px] px-2 flex items-center font-medium text-sm duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 32H0V224H192V32zm0 256H0V480H192V288zM256 32V224H448V32H256zM448 288H256V480H448V288z"/></svg>
           </a>
         </li>
@@ -81,17 +81,17 @@ layout: layouts/base.njk
     <div class="rounded-md bg-white dark:bg-black/80 backdrop-blur-md shadow-lg">
       <ul class="flex items-center gap-4 px-4">
         <li class="flex items-center">
-          <a href="#" class="h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">
+          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32v89.6H89.6V32H0zM0 151.5v89.6H89.6V151.5H0zM89.6 270.9H0v89.6H89.6V270.9zM0 390.4V480H89.6V390.4H0zM119.5 32v89.6h89.6V32H119.5zm0 119.5v89.6h89.6V151.5H119.5zm89.6 119.5H119.5v89.6h89.6V270.9zM119.5 390.4V480h89.6V390.4H119.5zM328.5 32H238.9v89.6h89.6V32zm0 119.5H238.9v89.6h89.6V151.5zM238.9 270.9v89.6h89.6V270.9H238.9zm89.6 119.5H238.9V480h89.6V390.4zM358.4 32v89.6H448V32H358.4zm0 119.5v89.6H448V151.5H358.4zM448 270.9H358.4v89.6H448V270.9zM358.4 390.4V480H448V390.4H358.4z"/></svg>
           </a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">
+          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32H128V160H0V32zM0 192H128V320H0V192zM128 352V480H0V352H128zM160 32H288V160H160V32zM288 192V320H160V192H288zM160 352H288V480H160V352zM448 32V160H320V32H448zM320 192H448V320H320V192zM448 352V480H320V352H448z"/></svg>
           </a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[42px] flex items-center font-medium text-sm text-black hover:text-black/80 dark:text-white dark:hover:text-white/80 duration-200">
+          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black hover:text-black/80 dark:text-white dark:hover:text-white/80 duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 32H0V224H192V32zm0 256H0V480H192V288zM256 32V224H448V32H256zM448 288H256V480H448V288z"/></svg>
           </a>
         </li>
