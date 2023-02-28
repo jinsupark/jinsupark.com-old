@@ -63,6 +63,7 @@ document.addEventListener(
             return header, content, footer;
           },
           after(data) {
+            window.scrollTo(0, 0);
             let header = gsap.from('.gsap-header', {
               y: -100,
               opacity: 0,
@@ -105,7 +106,7 @@ document.addEventListener(
             return header, content, footer;
           },
           after(data) {
-            window.scrollTo(0, 0);
+            
             let header = gsap.from('.gsap-header', {
               y: -100,
               opacity: 0,
