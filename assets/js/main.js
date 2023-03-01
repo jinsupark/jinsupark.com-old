@@ -3,6 +3,8 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('main', () => ({
     gridCols: 2,
     darkMode: false,
+    filterID: [1, 2, 3],
+
     toggleDarkMode() {
       if (this.darkMode == false) {
         document.querySelector('html').classList.toggle('dark');
@@ -15,7 +17,23 @@ document.addEventListener('alpine:init', () => {
         document.querySelector('html').classList.add('bg-[#EDEDED]');
         this.darkMode = !this.darkMode;
       }
-    }
+    },
+    filterWork() {
+      console.log(this.searchTerm);
+      let searchTerm = this.searchTerm.toLowerCase();
+      let icons = document.querySelectorAll('.grid-icon');
+      console.log(icons.length);
+      for (let i = 0; i < icons.length; i++) {
+        let searchContent = icons[i]
+          .getAttribute('data-keywords')
+          .toLowerCase();
+        console.log(searchContent);
+        icons[i].style.display = searchContent.includes(searchTerm)
+          ? 'flex'
+          : 'none';
+        console.log('hello');
+      }
+    },
   }));
 });
 
@@ -36,6 +54,9 @@ document.addEventListener(
     //   duration: 20,
     //   repeat: -1,
     // });
+
+    // var grid = document.querySelector('.js-grid');
+    // var iso = new Isotope(grid);
 
 
     barba.init({
