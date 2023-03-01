@@ -3,7 +3,7 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('main', () => ({
     gridCols: 2,
     darkMode: false,
-    filterID: [1, 2, 3],
+    filterID: 'all',
 
     toggleDarkMode() {
       if (this.darkMode == false) {
