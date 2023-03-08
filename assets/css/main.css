@@ -706,6 +706,10 @@ video {
   margin-left: 10%;
 }
 
+.mt-\[42vw\] {
+  margin-top: 42vw;
+}
+
 .flex {
   display: flex;
 }
@@ -792,6 +796,18 @@ video {
 
 .h-\[550px\] {
   height: 550px;
+}
+
+.h-\[450px\] {
+  height: 450px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .w-14 {
@@ -1488,6 +1504,10 @@ video {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-\[550px\] {
+    height: 550px;
   }
 
   .sm\:max-w-\[448px\] {
