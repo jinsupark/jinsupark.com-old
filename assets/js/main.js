@@ -9,11 +9,11 @@ document.addEventListener('alpine:init', () => {
       if (this.darkMode == false) {
         document.querySelector('html').classList.toggle('dark');
         document.querySelector('html').classList.remove('bg-[#EDEDED]');
-        document.querySelector('html').classList.add('bg-[#000000]');
+        document.querySelector('html').classList.add('bg-black');
         this.darkMode = !this.darkMode;
       } else {
         document.querySelector('html').classList.toggle('dark');
-        document.querySelector('html').classList.remove('bg-[#000000]');
+        document.querySelector('html').classList.remove('bg-black');
         document.querySelector('html').classList.add('bg-[#EDEDED]');
         this.darkMode = !this.darkMode;
       }
@@ -62,14 +62,13 @@ document.addEventListener(
     barba.init({
       transitions: [
         {
-          name: 'home',
-          to: { namespace: ['page'] },
+          to: { namespace: ['work'] },
           leave(data) {
-            let header = gsap.to('.gsap-header', {
-              y: -100,
-              opacity: 0,
-              duration: .4,
-            });
+            // let header = gsap.to('.gsap-header', {
+            //   y: -100,
+            //   opacity: 0,
+            //   duration: .4,
+            // });
 
             let content = gsap.to('.gsap-content', {
               opacity: 0,
@@ -81,19 +80,43 @@ document.addEventListener(
               opacity: 0,
               duration: 0.4,
             });
-            return header, content, footer;
+            return content, footer;
           },
           after(data) {
             window.scrollTo(0, 0);
-            let header = gsap.from('.gsap-header', {
-              y: -100,
-              opacity: 0,
-              duration: 0.4,
-            });
+            // let header = gsap.from('.gsap-header', {
+            //   y: -100,
+            //   opacity: 0,
+            //   duration: 0.4,
+            // });
 
             let content = gsap.from('.gsap-content', {
               opacity: 0,
               duration: 0.4,
+            });
+
+            let hero = gsap.from('.gsap-hero', {
+              height: '100vh',
+              duration: 0.4,
+              ease: 'power2.out',
+              delay: 0,
+            });
+            
+            let scaleCircle = gsap.from('.gsap-circle', {
+              scale: 1.5,
+              duration: 0.4,
+              ease: "power2.out",
+              delay: 0,
+            });
+
+            gsap.set(".gsap-circle-card", { 
+              x: '15%' 
+            });
+            let slideCard = gsap.to('.gsap-circle-card', {
+              translateX: '0',
+              duration: 1,
+              ease: "power2.out",
+              delay: 0,
             });
 
             let footer = gsap.from('.gsap-footer', {
@@ -101,18 +124,17 @@ document.addEventListener(
               opacity: 0,
               duration: 0.4,
             });
-            return header, content, footer;
+            return content, hero, scaleCircle, slideCard, footer;
           },
         },
         {
-          name: 'page',
           to: { namespace: ['home'] },
           leave(data) {
-            let header = gsap.to('.gsap-header', {
-              y: -100,
-              opacity: 0,
-              duration: 0.4,
-            });
+            // let header = gsap.to('.gsap-header', {
+            //   y: -100,
+            //   opacity: 0,
+            //   duration: 0.4,
+            // });
 
             let content = gsap.to('.gsap-content', {
               opacity: 0,
@@ -124,15 +146,15 @@ document.addEventListener(
               opacity: 0,
               duration: 0.4,
             });
-            return header, content, footer;
+            return content, footer;
           },
           after(data) {
             
-            let header = gsap.from('.gsap-header', {
-              y: -100,
-              opacity: 0,
-              duration: 0.4,
-            });
+            // let header = gsap.from('.gsap-header', {
+            //   y: -100,
+            //   opacity: 0,
+            //   duration: 0.4,
+            // });
             
             let content = gsap.from('.gsap-content', {
               opacity: 0,
@@ -144,7 +166,7 @@ document.addEventListener(
               opacity: 0,
               duration: 0.4,
             });
-            return header, content, footer;
+            return content, footer;
           },
         },
       ],

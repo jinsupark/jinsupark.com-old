@@ -6,36 +6,9 @@ layout: layouts/base.njk
 
 
 <main data-barba="container" data-barba-namespace="home">
-  <h1 class="fixed top-0 left-0 mt-5 ml-5 sm:mt-8 sm:ml-8 z-40 font-medium text-base leading-none text-black/70 dark:text-white/80 gsap-header">
-    © Selected Works by Jin <span class="hidden md:inline">Su Park</span>
-  </h1>
-
-  <div class="fixed top-0 right-0 mt-5 mr-5 sm:mt-8 sm:mr-8 z-40 gsap-header">
-    <ul class="flex items-center gap-5">
-      <li class="flex items-center">
-        <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">About</a>
-      </li>
-      <li class="hidden lg:flex items-center">
-        <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">Github</a>
-      </li>
-      <li class="hidden lg:flex items-center">
-        <a href="#" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">CV</a>
-      </li>
-      
-      {# <li class="flex lg:hidden items-center">
-        <a href="#" class="flex items-center font-medium text-sm text-black/80 hover:text-black/80 duration-200">
-          Published
-          <svg class="fill-current w-3 h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 240L160 384 0 240l0-48 320 0 0 48z"/></svg>
-        </a>
-      </li> #}
-      <li class="flex items-center lg:ml-1">
-        <button @click="toggleDarkMode()" class="w-4 h-4 rounded-full overflow-hidden border border-black dark:border-white">
-          <div class="w-[8px] h-4 bg-black dark:bg-white"></div>
-        </button>
-      </li>
-    </ul>
-  </div>
-
+  
+  
+  {# Category Selector #}
   <div class="fixed z-[60] bottom-0 mb-4 md:mb-8 px-4 w-full flex items-center justify-center pointer-events-none gsap-footer">
     <div class="flex items-center rounded-md bg-[#535353] shadow-lg overflow-auto pointer-events-auto">
       <ul class="flex flex-1 items-center whitespace-nowrap pl-5 overflow-auto">
@@ -77,6 +50,7 @@ layout: layouts/base.njk
     </div>
   </div>
 
+  {# Layout Selector #}
   <div class="hidden md:flex fixed z-[60] right-0 bottom-0 mb-8 mr-8 items-center gsap-footer">
     <div class="rounded-md bg-white dark:bg-black/80 backdrop-blur-md shadow-lg">
       <ul class="flex items-center gap-4 px-4">
@@ -99,20 +73,21 @@ layout: layouts/base.njk
     </div>
   </div>
   
-
-  
   <section class="gsap-content">
     {# Circle #}
-    <div class="mt-[12vw] sm:mt-0"></div>
-    <div class="relative overflow-hidden aspect-square md:aspect-auto py-0 md:py-[100px] flex items-center justify-center">
-      <div class="relative w-full max-w-[320px] sm:max-w-[448px] lg:max-w-[380px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white to-white/0 dark:from-white/20 dark:to-white/0"></div>
+    <div class="sticky top-0 z-10 flex items-center justify-center h-[550px] xl:h-[600px] 2xl:h-[800px]">
+      {# <div class="mt-[12vw] sm:mt-0"></div> #}
+      <div class="relative w-full max-w-[320px] sm:max-w-[384px] lg:max-w-[384px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white to-white/0 dark:from-white/20 dark:to-white/0"></div>
     </div>
 
-    <div class="w-full bg-white dark:bg-[#181818]">
+    <div class="relative z-20 w-full bg-white dark:bg-[#181818]">
       <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-8 py-8">
-        <h3 class="mb-8 md:mb-0 w-full max-w-[512px] text-black/50 dark:text-white/50 text-base font-regular leading-snug">
-          Carl Beaverson is an award-winning Web Developer, currently living & working abroad. A partner at <a class="underline decoration-black/40 hover:decoration-black/60 dark:decoration-white/40 dark:hover:decoration-white/60">Groundcrew</a>, his work is focused on creating bespoke, effective & engaging digital experiences.
+        <h3 class="mb-8 md:mb-0 w-full max-w-[512px] 2xl:max-w-[600px] text-black/50 dark:text-white/50 text-base 2xl:text-lg font-regular leading-snug 2xl:leading-[1.40]">
+          Jin Su Park is a New York based, multi-disciplinary Product Designer and Developer. He helps products achieve clarity through well-structured dialogue and incredible attention to detail.
         </h3>
+        {# <h3 class="mb-8 md:mb-0 w-full max-w-[512px] text-black/50 dark:text-white/50 text-base font-regular leading-snug">
+          Carl Beaverson is an award-winning Web Developer, currently living & working abroad. A partner at Groundcrew, his work is focused on creating bespoke, effective & engaging digital experiences.
+        </h3> #}
         <div class="md:flex justify-end items-center">
           <ul class="grid grid-cols-2 md:gap-20">
             <li>
