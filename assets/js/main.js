@@ -58,8 +58,42 @@ document.addEventListener(
     // var grid = document.querySelector('.js-grid');
     // var iso = new Isotope(grid);
 
+    
+    
 
     barba.init({
+      views: [
+        {
+          namespace: 'home',
+          afterEnter() {
+            // refresh the parallax based on new page content
+            gsap.to(".gsap-circle", {
+              scrollTrigger: {
+                trigger: 'body',
+                markers: false,
+                start: 0,
+                scrub: true
+              },
+              y: -400
+            });
+          }
+        },
+        {
+          namespace: 'work',
+          afterEnter() {
+            // refresh the parallax based on new page content
+            gsap.to(".gsap-circle", {
+              scrollTrigger: {
+                trigger: 'body',
+                markers: false,
+                start: 0,
+                scrub: true
+              },
+              y: -400
+            });
+          }
+        }
+      ],
       transitions: [
         {
           to: { namespace: ['work'] },
@@ -92,25 +126,25 @@ document.addEventListener(
 
             let content = gsap.from('.gsap-content', {
               opacity: 0,
-              duration: 0.4,
+              duration: 0.6,
             });
 
             let hero = gsap.from('.gsap-hero', {
               height: '100vh',
-              duration: 0.4,
+              duration: 0.6,
               ease: 'power2.out',
               delay: 0,
             });
             
             let scaleCircle = gsap.from('.gsap-circle', {
               scale: 1.5,
-              duration: 0.4,
+              duration: 0.6,
               ease: "power2.out",
               delay: 0,
             });
 
             gsap.set(".gsap-circle-card", { 
-              x: '15%' 
+              x: '20%' 
             });
             let slideCard = gsap.to('.gsap-circle-card', {
               translateX: '0',
@@ -122,7 +156,7 @@ document.addEventListener(
             let footer = gsap.from('.gsap-footer', {
               y: 100,
               opacity: 0,
-              duration: 0.4,
+              duration: 0.6,
             });
             return content, hero, scaleCircle, slideCard, footer;
           },

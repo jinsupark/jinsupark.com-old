@@ -1210,6 +1210,10 @@ video {
   padding-top: 75vh;
 }
 
+.pt-\[12vw\] {
+  padding-top: 12vw;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -1564,6 +1568,10 @@ video {
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
 }
 
