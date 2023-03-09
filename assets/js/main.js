@@ -125,7 +125,7 @@ document.addEventListener(
             });
 
             let hero = gsap.from('.gsap-hero', {
-              height: '100vh',
+              height: '900px',
               duration: 0.6,
               ease: 'power2.out',
               delay: 0,
