@@ -117,12 +117,7 @@ document.addEventListener(
             return content, footer;
           },
           after(data) {
-            window.scrollTo(0, 0);
-            // let header = gsap.from('.gsap-header', {
-            //   y: -100,
-            //   opacity: 0,
-            //   duration: 0.4,
-            // });
+            
 
             let content = gsap.from('.gsap-content', {
               opacity: 0,
@@ -158,6 +153,8 @@ document.addEventListener(
               opacity: 0,
               duration: 0.6,
             });
+
+            window.scrollTo(0, 0);
             return content, hero, scaleCircle, slideCard, footer;
           },
         },
