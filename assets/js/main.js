@@ -117,7 +117,7 @@ document.addEventListener(
             return content, footer;
           },
           after(data) {
-            
+            window.scrollTo(0, 0);
 
             let content = gsap.from('.gsap-content', {
               opacity: 0,
