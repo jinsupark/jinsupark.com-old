@@ -43,7 +43,6 @@ document.addEventListener(
   function () {
     gsap.registerPlugin(ScrollTrigger);
 
-
     // gsap.to('.gsap-glowfly-outer', {
     //   keyframes: {
     //     x: [0, '-25%', '25%', 0],
@@ -58,8 +57,34 @@ document.addEventListener(
     // var grid = document.querySelector('.js-grid');
     // var iso = new Isotope(grid);
 
-    
-    
+    gsap.from('.gsap-header', {
+      y: -100,
+      opacity: 0,
+      duration: 0.4,
+      onComplete() {
+        console.log('gegs');
+      }
+    });
+
+    gsap.from('.gsap-footer', {
+      y: 100,
+      opacity: 0,
+      duration: 0.4,
+    });
+
+    gsap.from('.gsap-hero', {
+      height: '100%',
+      duration: 0.6,
+      ease: 'power2.out',
+      delay: 0,
+    });
+
+    gsap.from('.gsap-circle', {
+      scale: 1.5,
+      duration: 0.6,
+      ease: 'power2.out',
+      delay: 0,
+    });
 
     barba.init({
       views: [
@@ -67,32 +92,32 @@ document.addEventListener(
           namespace: 'home',
           afterEnter() {
             // refresh the parallax based on new page content
-            gsap.to(".gsap-circle", {
+            gsap.to('.gsap-circle', {
               scrollTrigger: {
                 trigger: 'body',
                 markers: false,
                 start: 0,
-                scrub: true
+                scrub: true,
               },
-              y: -400
+              y: -400,
             });
-          }
+          },
         },
         {
           namespace: 'work',
           afterEnter() {
             // refresh the parallax based on new page content
-            gsap.to(".gsap-circle", {
+            gsap.to('.gsap-circle', {
               scrollTrigger: {
                 trigger: 'body',
                 markers: false,
                 start: 0,
-                scrub: true
+                scrub: true,
               },
-              y: -400
+              y: -400,
             });
-          }
-        }
+          },
+        },
       ],
       transitions: [
         {
@@ -130,21 +155,21 @@ document.addEventListener(
               ease: 'power2.out',
               delay: 0,
             });
-            
+
             let scaleCircle = gsap.from('.gsap-circle', {
               scale: 1.5,
               duration: 0.6,
-              ease: "power2.out",
+              ease: 'power2.out',
               delay: 0,
             });
 
-            gsap.set(".gsap-circle-card", { 
-              x: '20%' 
+            gsap.set('.gsap-circle-card', {
+              x: '20%',
             });
             let slideCard = gsap.to('.gsap-circle-card', {
               translateX: '0',
               duration: 1,
-              ease: "power2.out",
+              ease: 'power2.out',
               delay: 0,
             });
 
@@ -180,16 +205,15 @@ document.addEventListener(
             return content, footer;
           },
           after(data) {
-            
             // let header = gsap.from('.gsap-header', {
             //   y: -100,
             //   opacity: 0,
             //   duration: 0.4,
             // });
-            
+
             let content = gsap.from('.gsap-content', {
               opacity: 0,
-              duration: .4,
+              duration: 0.4,
             });
 
             let footer = gsap.from('.gsap-footer', {
@@ -206,7 +230,6 @@ document.addEventListener(
     if (history.scrollRestoration) {
       history.scrollRestoration = 'manual';
     }
-
   },
   false
 );
