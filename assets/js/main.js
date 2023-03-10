@@ -147,107 +147,93 @@ document.addEventListener(
       ],
       transitions: [
         {
-          to: { namespace: ['work'] },
+          to: { namespace: ['home'] },
           leave(data) {
-            // let header = gsap.to('.gsap-header', {
-            //   y: -100,
-            //   opacity: 0,
-            //   duration: .4,
-            // });
 
-            let content = gsap.to('.gsap-content', {
+            let fadeOutContent = gsap.to('.gsap-content', {
               opacity: 0,
-              duration: 0.4,
+              duration: 0.6,
+              ease: 'expo.inOut',
             });
 
             let footer = gsap.to('.gsap-footer', {
               y: 100,
-              opacity: 0,
-              duration: 0.4,
+              duration: 0.6,
+              ease: 'expo.inOut',
             });
-            return content, footer;
+            return fadeOutContent, footer;
+
+          },
+          after(data) {
+
+            let fadeInContent = gsap.from('.gsap-content', {
+              opacity: 0,
+              duration: 1,
+              ease: 'expo.out',
+            });
+
+            let slideInFooter = gsap.from('.gsap-footer', {
+              y: 100,
+              duration: 1.4,
+              ease: 'expo.out',
+              delay: 0,
+            });
+
+            return fadeInContent, slideInFooter;
+
+          },
+        },
+        {
+          to: { namespace: ['work'] },
+          leave(data) {
+            let fadeOutContent = gsap.to('.gsap-content', {
+              opacity: 0,
+              duration: .6,
+              ease: 'expo.inOut',
+            });
+
+            let footer = gsap.to('.gsap-footer', {
+              y: 100,
+              duration: .6,
+              ease: 'expo.inOut',
+            });
+            return fadeOutContent, footer;
           },
           after(data) {
             window.scrollTo(0, 0);
 
-            let content = gsap.from('.gsap-content', {
+            let fadeInContent = gsap.from('.gsap-content', {
               opacity: 0,
-              duration: 0.6,
-            });
-
-            let hero = gsap.from('.gsap-hero', {
-              height: '900px',
-              duration: 0.6,
-              ease: 'power2.out',
-              delay: 0,
-            });
-
-            let scaleCircle = gsap.from('.gsap-circle', {
-              scale: 1.5,
-              duration: 0.6,
-              ease: 'power2.out',
-              delay: 0,
+              duration: 1,
+              ease: 'expo.out',
             });
 
             gsap.set('.gsap-circle-card', {
               x: '20%',
             });
+            
             let slideCard = gsap.to('.gsap-circle-card', {
               translateX: '0',
               duration: 1,
-              ease: 'power2.out',
+              ease: 'expo.out',
               delay: 0,
             });
 
-            let footer = gsap.from('.gsap-footer', {
+            let scaleDownHero = gsap.from('.gsap-hero', {
+              height: '100vh',
+              duration: 1,
+              ease: 'expo.inOut',
+              delay: 0.2,
+            });
+
+            let slideInFooter = gsap.from('.gsap-footer', {
               y: 100,
-              opacity: 0,
-              duration: 0.6,
+              duration: 1,
+              ease: 'expo.inOut',
+              delay: 0.2,
             });
 
-            window.scrollTo(0, 0);
-            return content, hero, scaleCircle, slideCard, footer;
-          },
-        },
-        {
-          to: { namespace: ['home'] },
-          leave(data) {
-            // let header = gsap.to('.gsap-header', {
-            //   y: -100,
-            //   opacity: 0,
-            //   duration: 0.4,
-            // });
-
-            let content = gsap.to('.gsap-content', {
-              opacity: 0,
-              duration: 0.4,
-            });
-
-            let footer = gsap.to('.gsap-footer', {
-              y: 100,
-              opacity: 0,
-              duration: 0.4,
-            });
-            return content, footer;
-          },
-          after(data) {
-            // let header = gsap.from('.gsap-header', {
-            //   y: -100,
-            //   opacity: 0,
-            //   duration: 0.4,
-            // });
-
-            let content = gsap.from('.gsap-content', {
-              opacity: 0,
-              duration: 0.4,
-            });
-
-            let footer = gsap.from('.gsap-footer', {
-              y: 100,
-              opacity: 0,
-              duration: 0.4,
-            });
-            return content, footer;
+            return fadeInContent, slideCard, scaleDownHero, slideInFooter;
           },
         },
       ],
