@@ -60,7 +60,7 @@ document.addEventListener(
     
 
     gsap.set('.gsap-circle', {
-      scale: 2.5,
+      scale: 2,
       opacity: 0,
     });
 
