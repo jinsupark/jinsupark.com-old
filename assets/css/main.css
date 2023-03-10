@@ -1783,6 +1783,10 @@ video {
     gap: 2.5rem;
   }
 
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+
   .lg\:pt-\[50vh\] {
     padding-top: 50vh;
   }
