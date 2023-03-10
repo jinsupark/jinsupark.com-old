@@ -177,6 +177,10 @@ document.addEventListener(
               duration: 1.4,
               ease: 'expo.out',
               delay: 0,
+              onComplete() {
+                let element = document.querySelector('.gsap-container');
+                element.classList.remove('h-screen', 'overflow-hidden');
+              },
             });
 
             return fadeInContent, slideInFooter;
@@ -231,6 +235,10 @@ document.addEventListener(
               duration: 1,
               ease: 'expo.inOut',
               delay: 0.2,
+              onComplete() {
+                let element = document.querySelector('.gsap-container');
+                element.classList.remove('h-screen', 'overflow-hidden');
+              },
             });
 
             return fadeInContent, slideCard, scaleDownHero, slideInFooter;
