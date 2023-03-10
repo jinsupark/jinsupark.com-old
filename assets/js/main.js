@@ -57,33 +57,59 @@ document.addEventListener(
     // var grid = document.querySelector('.js-grid');
     // var iso = new Isotope(grid);
 
+    
+
+    gsap.set('.gsap-circle', {
+      scale: 2.5,
+      opacity: 0,
+    });
+
+    gsap.to('.gsap-circle', {
+      opacity: 1,
+      duration: 2,
+      ease: 'expo.out',
+      delay: .6,
+    });
+
+    gsap.to('.gsap-circle', {
+      scale: 1.5,
+      duration: 2,
+      ease: 'expo.out',
+      delay: .6,
+    });
+
+    gsap.to('.gsap-circle', {
+      scale: 1,
+      duration: 2,
+      ease: 'expo.inOut',
+      delay: 2,
+    });
+
+    gsap.from('.gsap-hero', {
+      height: '100vh',
+      duration: 2,
+      ease: 'expo.inOut',
+      delay: 2,
+    });
+
     gsap.from('.gsap-header', {
       y: -100,
       opacity: 0,
-      duration: 0.4,
+      duration: 2,
+      ease: 'expo.inOut',
+      delay: 2,
       onComplete() {
-        console.log('gegs');
-      }
+        let element = document.querySelector('.gsap-container');
+        element.classList.remove('h-screen', 'overflow-hidden');
+      },
     });
 
     gsap.from('.gsap-footer', {
       y: 100,
       opacity: 0,
-      duration: 0.4,
-    });
-
-    gsap.from('.gsap-hero', {
-      height: '100%',
-      duration: 0.6,
-      ease: 'power2.out',
-      delay: 0,
-    });
-
-    gsap.from('.gsap-circle', {
-      scale: 1.5,
-      duration: 0.6,
-      ease: 'power2.out',
-      delay: 0,
+      duration: 2,
+      ease: 'expo.inOut',
+      delay: 2,
     });
 
     barba.init({
