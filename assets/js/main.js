@@ -125,7 +125,7 @@ document.addEventListener(
                 start: 0,
                 scrub: true,
               },
-              y: -400,
+              y: -300,
             });
           },
         },
@@ -140,7 +140,7 @@ document.addEventListener(
                 start: 0,
                 scrub: true,
               },
-              y: -400,
+              y: -300,
             });
           },
         },
