@@ -152,13 +152,13 @@ document.addEventListener(
 
             let fadeOutContent = gsap.to('.gsap-content', {
               opacity: 0,
-              duration: 0.6,
+              duration: 0.4,
               ease: 'expo.inOut',
             });
 
             let footer = gsap.to('.gsap-footer', {
               y: 100,
-              duration: 0.6,
+              duration: 0.4,
               ease: 'expo.inOut',
             });
             return fadeOutContent, footer;
@@ -168,13 +168,13 @@ document.addEventListener(
 
             let fadeInContent = gsap.from('.gsap-content', {
               opacity: 0,
-              duration: 1,
+              duration: .4,
               ease: 'expo.out',
             });
 
             let slideInFooter = gsap.from('.gsap-footer', {
               y: 100,
-              duration: 1.4,
+              duration: .4,
               ease: 'expo.out',
               delay: 0,
               onComplete() {
@@ -192,19 +192,20 @@ document.addEventListener(
           leave(data) {
             let fadeOutContent = gsap.to('.gsap-content', {
               opacity: 0,
-              duration: .6,
+              duration: .4,
               ease: 'expo.inOut',
             });
 
             let footer = gsap.to('.gsap-footer', {
               y: 100,
-              duration: .6,
+              duration: .4,
               ease: 'expo.inOut',
             });
             return fadeOutContent, footer;
           },
           after(data) {
             window.scrollTo(0, 0);
+            console.log('After Work');
 
             let fadeInContent = gsap.from('.gsap-content', {
               opacity: 0,
