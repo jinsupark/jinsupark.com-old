@@ -59,12 +59,12 @@ document.addEventListener(
 
     gsap.to('.gsap-content', {
       opacity: 1,
-      duration: 1,
+      duration: 3,
       ease: 'expo.out',
     });
 
-    gsap.to('.gsap-hero', {
-      height: '75vh',
+    gsap.from('.gsap-hero', {
+      height: '100svh',
       duration: 2,
       ease: 'expo.inOut',
       delay: .2,
@@ -75,11 +75,7 @@ document.addEventListener(
       opacity: 0,
       duration: 2,
       ease: 'expo.inOut',
-      delay: .6,
-      onComplete() {
-        let element = document.querySelector('.gsap-container');
-        element.classList.remove('h-screen', 'overflow-hidden');
-      },
+      delay: .4
     });
 
     gsap.from('.gsap-footer', {
@@ -87,8 +83,11 @@ document.addEventListener(
       opacity: 0,
       duration: 2,
       ease: 'expo.inOut',
-      delay: .6,
+      delay: .4,
     });
+
+    let scrollX = 0;
+    let scrollY = 0;
 
     barba.init({
       views: [
@@ -99,11 +98,12 @@ document.addEventListener(
             gsap.to('.gsap-circle', {
               scrollTrigger: {
                 trigger: 'body',
-                markers: false,
-                start: 0,
+                markers: true,
+                start: 'top top',
+                end: '+=800',
                 scrub: true,
               },
-              y: -300,
+              y: -200,
             });
           },
         },
@@ -127,7 +127,6 @@ document.addEventListener(
         {
           to: { namespace: ['home'] },
           leave(data) {
-
             let fadeOutContent = gsap.to('.gsap-content', {
               opacity: 0,
               duration: 0.4,
@@ -140,10 +139,12 @@ document.addEventListener(
               ease: 'expo.inOut',
             });
             return fadeOutContent, footer;
-
+          },
+          beforeEnter(data) {
+            // then later in the code...
+            window.scrollTo(scrollX, scrollY);
           },
           after(data) {
-
             let fadeInContent = gsap.to('.gsap-content', {
               opacity: 1,
               duration: 1,
@@ -152,49 +153,53 @@ document.addEventListener(
 
             let slideInFooter = gsap.from('.gsap-footer', {
               y: 100,
-              duration: .4,
+              duration: 0.4,
               ease: 'expo.out',
               delay: 0,
               onComplete() {
-                let element = document.querySelector('.gsap-container');
-                element.classList.remove('h-screen', 'overflow-hidden');
+                let element = document.querySelector('.gsap-hero');
+                element.style.removeProperty('height');
+                // element.classList.remove('h-screen', 'overflow-hidden');
               },
             });
 
             return fadeInContent, slideInFooter;
-
           },
         },
         {
           to: { namespace: ['work'] },
+          beforeLeave(data) {
+            scrollX = barba.history.current.scroll.x;
+            scrollY = barba.history.current.scroll.y;
+            console.log(scrollY);
+          },
           leave(data) {
             let fadeOutContent = gsap.to('.gsap-content', {
               opacity: 0,
-              duration: .4,
+              duration: 0.4,
               ease: 'expo.inOut',
             });
 
             let footer = gsap.to('.gsap-footer', {
               y: 100,
-              duration: .4,
+              duration: 0.4,
               ease: 'expo.inOut',
             });
             return fadeOutContent, footer;
           },
-          after(data) {
+          beforeEnter() {
             window.scrollTo(0, 0);
-            console.log('After Work');
-
+            gsap.set('.gsap-circle-card', {
+              x: '20%',
+            });
+          },
+          after(data) {
             let fadeInContent = gsap.to('.gsap-content', {
               opacity: 1,
               duration: 1,
               ease: 'expo.out',
             });
 
-            gsap.set('.gsap-circle-card', {
-              x: '20%',
-            });
-            
             let slideCard = gsap.to('.gsap-circle-card', {
               translateX: '0',
               duration: 1,
@@ -202,8 +207,8 @@ document.addEventListener(
               delay: 0,
             });
 
-            let scaleDownHero = gsap.to('.gsap-hero', {
-              height: '75vh',
+            let scaleDownHero = gsap.from('.gsap-hero', {
+              height: '100svh',
               duration: 1,
               ease: 'expo.inOut',
               delay: 0.2,
@@ -213,10 +218,11 @@ document.addEventListener(
               y: 100,
               duration: 1,
               ease: 'expo.inOut',
-              delay: 0.2,
+              delay: 0.4,
               onComplete() {
-                let element = document.querySelector('.gsap-container');
-                element.classList.remove('h-screen', 'overflow-hidden');
+                let element = document.querySelector('.gsap-hero');
+                element.style.removeProperty('height');
+                // element.classList.remove('h-screen', 'overflow-hidden');
               },
             });
 
