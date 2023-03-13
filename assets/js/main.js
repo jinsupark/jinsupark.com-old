@@ -98,7 +98,7 @@ document.addEventListener(
             gsap.to('.gsap-circle', {
               scrollTrigger: {
                 trigger: 'body',
-                markers: true,
+                // markers: true,
                 start: 'top top',
                 end: '+=800',
                 scrub: true,
