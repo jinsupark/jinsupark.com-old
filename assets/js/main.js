@@ -57,39 +57,17 @@ document.addEventListener(
     // var grid = document.querySelector('.js-grid');
     // var iso = new Isotope(grid);
 
-    
-
-    gsap.set('.gsap-circle', {
-      scale: 2,
-      opacity: 0,
-    });
-
-    gsap.to('.gsap-circle', {
+    gsap.to('.gsap-content', {
       opacity: 1,
-      duration: 2,
+      duration: 1,
       ease: 'expo.out',
-      delay: .6,
     });
 
-    gsap.to('.gsap-circle', {
-      scale: 1.5,
-      duration: 2,
-      ease: 'expo.out',
-      delay: .6,
-    });
-
-    gsap.to('.gsap-circle', {
-      scale: 1,
+    gsap.to('.gsap-hero', {
+      height: '75vh',
       duration: 2,
       ease: 'expo.inOut',
-      delay: 2,
-    });
-
-    gsap.from('.gsap-hero', {
-      height: '100vh',
-      duration: 2,
-      ease: 'expo.inOut',
-      delay: 2,
+      delay: .2,
     });
 
     gsap.from('.gsap-header', {
@@ -97,7 +75,7 @@ document.addEventListener(
       opacity: 0,
       duration: 2,
       ease: 'expo.inOut',
-      delay: 2,
+      delay: .6,
       onComplete() {
         let element = document.querySelector('.gsap-container');
         element.classList.remove('h-screen', 'overflow-hidden');
@@ -109,7 +87,7 @@ document.addEventListener(
       opacity: 0,
       duration: 2,
       ease: 'expo.inOut',
-      delay: 2,
+      delay: .6,
     });
 
     barba.init({
@@ -166,9 +144,9 @@ document.addEventListener(
           },
           after(data) {
 
-            let fadeInContent = gsap.from('.gsap-content', {
-              opacity: 0,
-              duration: .4,
+            let fadeInContent = gsap.to('.gsap-content', {
+              opacity: 1,
+              duration: 1,
               ease: 'expo.out',
             });
 
@@ -207,8 +185,8 @@ document.addEventListener(
             window.scrollTo(0, 0);
             console.log('After Work');
 
-            let fadeInContent = gsap.from('.gsap-content', {
-              opacity: 0,
+            let fadeInContent = gsap.to('.gsap-content', {
+              opacity: 1,
               duration: 1,
               ease: 'expo.out',
             });
@@ -224,8 +202,8 @@ document.addEventListener(
               delay: 0,
             });
 
-            let scaleDownHero = gsap.from('.gsap-hero', {
-              height: '100vh',
+            let scaleDownHero = gsap.to('.gsap-hero', {
+              height: '75vh',
               duration: 1,
               ease: 'expo.inOut',
               delay: 0.2,
