@@ -114,11 +114,12 @@ document.addEventListener(
             gsap.to('.gsap-circle', {
               scrollTrigger: {
                 trigger: 'body',
-                markers: false,
-                start: 0,
+                // markers: true,
+                start: 'top top',
+                end: '+=800',
                 scrub: true,
               },
-              y: -300,
+              y: -200,
             });
           },
         },
