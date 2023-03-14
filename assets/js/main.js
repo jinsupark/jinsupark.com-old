@@ -134,16 +134,29 @@ document.addEventListener(
               ease: 'expo.inOut',
             });
 
-            let footer = gsap.to('.gsap-footer', {
+            let slideOutHeader = gsap.to('.gsap-header', {
+              y: -100,
+              duration: 0.4,
+              ease: 'expo.inOut',
+            });
+
+            let slideOutFooter = gsap.to('.gsap-footer', {
               y: 100,
               duration: 0.4,
               ease: 'expo.inOut',
             });
-            return fadeOutContent, footer;
+            return fadeOutContent, slideOutHeader, slideOutFooter;
           },
           beforeEnter(data) {
             // then later in the code...
             window.scrollTo(scrollX, scrollY);
+
+            gsap.set('.gsap-header', {
+              y: -100,
+            });
+            gsap.set('.gsap-footer', {
+              y: 100,
+            });
           },
           after(data) {
             let fadeInContent = gsap.to('.gsap-content', {
@@ -152,9 +165,16 @@ document.addEventListener(
               ease: 'expo.out',
             });
 
-            let slideInFooter = gsap.from('.gsap-footer', {
-              y: 100,
-              duration: 0.4,
+            let slideInHeader = gsap.to('.gsap-header', {
+              y: 0,
+              duration: .4,
+              ease: 'expo.out',
+              delay: 0,
+            });
+
+            let slideInFooter = gsap.to('.gsap-footer', {
+              y: 0,
+              duration: .4,
               ease: 'expo.out',
               delay: 0,
               onComplete() {
@@ -164,7 +184,7 @@ document.addEventListener(
               },
             });
 
-            return fadeInContent, slideInFooter;
+            return fadeInContent, slideInHeader, slideInFooter;
           },
         },
         {
@@ -181,17 +201,29 @@ document.addEventListener(
               ease: 'expo.inOut',
             });
 
-            let footer = gsap.to('.gsap-footer', {
+            let slideOutHeader = gsap.to('.gsap-header', {
+              y: -100,
+              duration: 0.4,
+              ease: 'expo.inOut',
+            });
+
+            let slideOutFooter = gsap.to('.gsap-footer', {
               y: 100,
               duration: 0.4,
               ease: 'expo.inOut',
             });
-            return fadeOutContent, footer;
+            return fadeOutContent, slideOutHeader, slideOutFooter;
           },
           beforeEnter() {
             window.scrollTo(0, 0);
             gsap.set('.gsap-circle-card', {
               x: '20%',
+            });
+            gsap.set('.gsap-header', {
+              y: -100,
+            });
+            gsap.set('.gsap-footer', {
+              y: 100,
             });
           },
           after(data) {
@@ -215,8 +247,15 @@ document.addEventListener(
               delay: 0.2,
             });
 
-            let slideInFooter = gsap.from('.gsap-footer', {
-              y: 100,
+            let slideInHeader = gsap.to('.gsap-header', {
+              y: 0,
+              duration: 1,
+              ease: 'expo.inOut',
+              delay: 0.4
+            });
+
+            let slideInFooter = gsap.to('.gsap-footer', {
+              y: 0,
               duration: 1,
               ease: 'expo.inOut',
               delay: 0.4,
@@ -227,7 +266,7 @@ document.addEventListener(
               },
             });
 
-            return fadeInContent, slideCard, scaleDownHero, slideInFooter;
+            return fadeInContent, slideCard, scaleDownHero, slideInHeader, slideInFooter;
           },
         },
       ],
