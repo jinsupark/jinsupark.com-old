@@ -3,41 +3,47 @@ title: About
 layout: layouts/base.njk
 ---
 
-<h1 class="fixed top-0 left-0 mt-5 ml-5 sm:mt-8 sm:ml-8 z-40 font-medium text-base leading-none text-black/70 dark:text-white/80 gsap-header">
-  © Selected Works by Jin <span class="hidden md:inline">Su Park</span>
-</h1>
+<main data-barba="container" data-barba-namespace="work" class="gsap-container xh-screen xoverflow-hidden">
+  <h1 class="fixed top-0 left-0 mt-5 ml-5 sm:mt-8 sm:ml-8 z-50 font-medium text-base leading-none text-black dark:text-white gsap-header">
+    <a href="/" class="flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-4 h-4 mr-1" viewBox="0 0 512 512"><title>Arrow Back</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg>
 
-<div class="fixed top-0 right-0 mt-5 mr-5 sm:mt-8 sm:mr-8 z-40 gsap-header">
-  <ul class="flex items-center gap-5">
-    <li class="flex items-center">
-      <a href="/about" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">About</a>
-    </li>
-    <li class="hidden lg:flex items-center">
-      <a href="https://github.com/jinsupark" target="_blank" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">Github</a>
-    </li>
-    <li class="hidden lg:flex items-center">
-      <a href="https://read.cv/jinsupark" target="_blank" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">CV</a>
-    </li>
-    
-    {# <li class="flex lg:hidden items-center">
-      <a href="#" class="flex items-center font-medium text-sm text-black/80 hover:text-black/80 duration-200">
-        Published
-        <svg class="fill-current w-3 h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 240L160 384 0 240l0-48 320 0 0 48z"/></svg>
-      </a>
-    </li> #}
-    <li class="flex items-center lg:ml-1">
-      <button @click="toggleDarkMode()" class="w-4 h-4 rounded-full overflow-hidden border border-black dark:border-white">
-        <div class="w-[8px] h-4 bg-black dark:bg-white"></div>
-      </button>
-    </li>
-  </ul>
-</div>
+      Back to projects
+    </a>
+  </h1>
 
-<main data-barba="container" data-barba-namespace="page">
+  <div class="fixed top-0 right-0 mt-5 mr-5 sm:mt-8 sm:mr-8 z-50 gsap-header">
+    <ul class="flex items-center gap-5">
+      <li class="flex items-center">
+        <a href="/about" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">About</a>
+      </li>
+      <li class="hidden lg:flex items-center">
+        <a href="/" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">Works</a>
+      </li>
+      <li class="hidden lg:flex items-center">
+        <a href="https://github.com/jinsupark" target="_blank" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">Github</a>
+      </li>
+      <li class="hidden lg:flex items-center">
+        <a href="https://read.cv/jinsupark" target="_blank" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">CV</a>
+      </li>
+      
+      {# <li class="flex lg:hidden items-center">
+        <a href="#" class="flex items-center font-medium text-sm text-black/80 hover:text-black/80 duration-200">
+          Published
+          <svg class="fill-current w-3 h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 240L160 384 0 240l0-48 320 0 0 48z"/></svg>
+        </a>
+      </li> #}
+      <li class="flex items-center lg:ml-1">
+        <button @click="toggleDarkMode()" class="w-4 h-4 rounded-full overflow-hidden border border-black dark:border-white">
+          <div class="w-[8px] h-4 bg-black dark:bg-white"></div>
+        </button>
+      </li>
+    </ul>
+  </div>
 
   <div class="fixed z-[60] left-1/2 translate-x-[-50%] bottom-0 mb-4 md:mb-8 px-4 w-full md:w-auto flex items-center justify-center gsap-footer">
     <a href="/" class="relative flex items-center justify-center flex-none w-14 h-14 text-white">
-      <div class="absolute top-0 left-0 flex-none w-14 h-14 rounded-full bg-[#535353] duration-200 hover:scale-110">
+      <div class="absolute top-0 left-0 flex-none w-14 h-14 rounded-full bg-neutral-800 dark:bg-neutral-700 duration-200 hover:scale-110">
 
       </div>
       <svg class="relative z-10 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -45,130 +51,204 @@ layout: layouts/base.njk
     </a>
   </div>
 
+  <section class="gsap-content" style="opacity: 0;">
 
-  <section class="gsap-content">
 
-    <div class="grid grid-cols-2 mt-[112px]">
-      <div></div>
-      <div class="max-w-[576px]">
-        <p class="text-black/50 dark:text-white/50 text-xl font-medium leading-snug mb-6 last:mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        </p>
-        <p class="text-black/50 dark:text-white/50 text-xl font-medium leading-snug mb-6 last:mb-0">
-          Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
-        </p>
-        <p class="text-black/50 dark:text-white/50 text-xl font-medium leading-snug mb-6 last:mb-0">
-          I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. If you have something on your mind, get in touch.
-        </p>
+    {# Circle #}
+    <div class="sticky top-0 z-10 flex items-center justify-center h-[450px] sm:h-[550px] xl:h-[550px] 2xl:h-[800px] pt-[12vw] sm:pt-0 gsap-hero">
+      <div class="relative w-full max-w-[320px] sm:max-w-[384px] lg:max-w-[384px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white/80 to-white/0 dark:from-gray-200/20 dark:to-black gsap-circle"></div>
+    </div>
 
-        <ul class="flex items-center gap-5 mt-12">
-          <li><a class="text-base text-black/40 dark:text-white/40 font-medium">Email →</a></li>
-          <li><a class="text-base text-black/40 dark:text-white/40 font-medium">Email →</a></li>
-          <li><a class="text-base text-black/40 dark:text-white/40 font-medium">Email →</a></li>
-        </ul>
 
-        <div class="grid grid-cols-2 mt-[72px]">
-          <ul>
-            <li class="text-base text-black/80 dark:text-white/80 font-medium mb-6">Disciplines</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Digital Strategy</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Digital Design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Web design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">UX/UI </li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Design Systems</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">App Design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Digital </li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Digital Strategy</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Digital Design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Web design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">UX/UI </li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Design Systems</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">App Design</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Digital </li>
-          </ul>
+    <div class="relative z-40 w-full bg-white dark:bg-[#181818]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 px-5 md:px-8 py-8">
+        <div>
+          <h1 class="text-4xl sm:text-5xl 2xl:text-6xl font-regular text-neutral-300 dark:text-neutral-700 mb-6">
+            Let Curiosity Play
+            {# <br>
+            <span class="text-neutral-300 dark:text-neutral-600">(2023)</span> #}
+          </h1>
+          {# <div class="w-9 h-[2px] mb-12 bg-neutral-700 dark:bg-neutral-200"></div> #}
+          
+        </div>
 
-          <ul>
-            <li class="text-base text-black/80 dark:text-white/80 font-medium mb-6">Awards</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">Design Museum - Designs of the Year</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">D&AD Wood Pencil</li>
-            <li class="text-base text-black/40 dark:text-white/40 font-medium">D&AD New Blood Yellow Pencil</li>
-          </ul>
+        <div>
+          <div x-data="{ open: false }">
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
+            </p>
+
+            <a x-show="!open" @click="open = true" class="font-medium text-base 2xl:text-lg dark:text-neutral-200 dark:hover:text-neutral-300 cursor-pointer">Read more</a>
+
+            <div x-show="open" x-transition.opacity>
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+                Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
+              </p>
+
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+                I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
+              </p>
+            </div>
+          </div>
+          
+
+          <table class="w-full mt-[96px] dark:text-neutral-400 text-xs xl:text-sm">
+            <tr>
+              <td class="align-top py-3 pr-8 border-t border-neutral-400 dark:border-neutral-700">Awards</td>
+              <td class="align-top py-3 dark:text-neutral-500 border-t border-neutral-400 dark:border-neutral-700">
+                Design Museum - Designs of the Year<br>
+                D&AD Wood Pencil<br>
+                D&AD New Blood Yellow Pencil
+              </td>
+            </tr>
+            <tr>
+              <td class="align-top py-3 pr-8 border-t border-neutral-400 dark:border-neutral-700">Notable Clients</td>
+              <td class="align-top py-3 dark:text-neutral-500 border-t border-neutral-400 dark:border-neutral-700">
+                Medallia<br>
+                Fergus<br>
+                Hopmedic<br>
+                SaintSaint<br>
+                Castle Intelligence,<br>
+                Glory League</td>
+            </tr>
+
+            
+          </table>
+        </div>
+      </div>
+
+
+ 
+    </div>
+
+    <div class="relative z-40 w-full bg-white dark:bg-[#181818]">
+      <div class="px-5 md:px-8 pt-[96px]">
+        <div class="h-1 bg-white/[.2]">
         </div>
       </div>
     </div>
 
+    <div class="relative z-40 w-full bg-white dark:bg-[#181818]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 px-5 md:px-8 py-8">
+        <div>
+          <h1 class="text-4xl sm:text-5xl 2xl:text-6xl font-regular text-neutral-300 dark:text-neutral-700 mb-6">
+            The Magical Process
+            {# <br>
+            <span class="text-neutral-300 dark:text-neutral-600">(2023)</span> #}
+          </h1>
+          {# <div class="w-9 h-[2px] mb-12 bg-neutral-700 dark:bg-neutral-200"></div> #}
+          
+        </div>
 
-    <div class="px-5 sm:px-8 max-w-[768px] mt-[320px]">
-      <h2 class="text-4xl mb-[56px]">Carl Beaverson is an award-winning Web Developer, currently living & working abroad. A partner at Groundcrew, his work is focused on creating bespoke, effective & engaging digital experiences.</h2>
-    </div>
+        <div>
+          <div x-data="{ open: false }">
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
 
-    <div class="px-5 sm:px-8 w-full max-w-[680px] mb-[72px]">
-      <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-      </p>
-    </div>
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
+            </p>
 
+            <a x-show="!open" @click="open = true" class="font-medium text-base 2xl:text-lg dark:text-neutral-200 dark:hover:text-neutral-300 cursor-pointer">Read more</a>
 
-    <div class="grid grid-cols-12 gap-5 sm:gap-8 px-5 sm:px-8 mt-[320px] mb-[320px] max-w-[1440px]">
+            <div x-show="open" x-transition.opacity>
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+                Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
+              </p>
 
-      
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+                I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
+              </p>
+            </div>
+          </div>
+          
 
-      <div class="col-span-5 text-justify">
-        
-        <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
-          Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
-        </p>
-      </div>
-      <img src="https://cdn.dribbble.com/userupload/4590099/file/original-b6cbc2cd2e7c468cea649fcf099f83de.jpg?compress=1&resize=1504x846" class="col-span-7 mb-10">
-      <div class="col-span-5">
-        <div class="grid grid-cols-2">
-          <ul>
-            <li class="text-base text-black/80 dark:text-white/80 font-medium mb-6">Disciplines</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Digital Strategy</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Digital Design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Web design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">UX/UI </li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Design Systems</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">App Design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Digital </li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Digital Strategy</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Digital Design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Web design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">UX/UI </li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Design Systems</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">App Design</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Digital </li>
-          </ul>
+          <table class="w-full mt-[96px] dark:text-neutral-400 text-xs xl:text-sm">
+            <tr>
+              <td class="align-top py-3 pr-8 border-t border-neutral-400 dark:border-neutral-700">Discipline</td>
+              <td class="align-top py-3 dark:text-neutral-500 border-t border-neutral-400 dark:border-neutral-700">Digital Strategy <br>Digital Design, <br>Web design</td>
+            </tr>
+            <tr>
+              <td class="align-top py-3 pr-8 border-t border-neutral-400 dark:border-neutral-700">Technology</td>
+              <td class="align-top py-3 dark:text-neutral-500 border-t border-neutral-400 dark:border-neutral-700">HTML, <br>CSS, <br>Figma, <br>Eleventy, <br>Tailwind, <br>AlpineJS</td>
+            </tr>
 
-          <ul>
-            <li class="text-base text-black/80 dark:text-white/80 font-medium mb-6">Awards</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">Design Museum - Designs of the Year</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">D&AD Wood Pencil</li>
-            <li class="text-sm text-black/40 dark:text-white/40 font-medium">D&AD New Blood Yellow Pencil</li>
-          </ul>
+            
+          </table>
         </div>
       </div>
-      <div class="col-span-5">
-        <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-        </p>
-        <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
-          Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
-        </p>
 
-        <h3 class="text-base text-black/80 dark:text-white/80 font-medium mt-12 mb-6">Awards</h3>
-        <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-        </p>
-        <p class="text-black/50 dark:text-white/50 text-base font-medium leading-snug mb-6 last:mb-0">
-          Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
-        </p>
+
+ 
+    </div>
+
+    <div class="relative z-40 w-full bg-white dark:bg-[#181818]">
+      <div class="px-5 md:px-8 pt-[96px]">
+        <div class="h-1 bg-white/[.2]">
+        </div>
       </div>
     </div>
-    
-  </section
-  
+
+    <div class="relative z-40 w-full bg-white dark:bg-[#181818]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 px-5 md:px-8 py-8">
+        <div>
+          <h1 class="text-4xl sm:text-5xl 2xl:text-6xl font-regular text-neutral-300 dark:text-neutral-700 mb-6">
+            Design Roots
+            {# <br>
+            <span class="text-neutral-300 dark:text-neutral-600">(2023)</span> #}
+          </h1>
+          {# <div class="w-9 h-[2px] mb-12 bg-neutral-700 dark:bg-neutral-200"></div> #}
+          
+        </div>
+
+        <div>
+          <div x-data="{ open: false }">
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
+            </p>
+
+            <a x-show="!open" @click="open = true" class="font-medium text-base 2xl:text-lg dark:text-neutral-200 dark:hover:text-neutral-300 cursor-pointer">Read more</a>
+
+            <div x-show="open" x-transition.opacity>
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+                Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
+              </p>
+
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+                I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
+              </p>
+            </div>
+          </div>
+          
+
+          <table class="w-full mt-[96px] dark:text-neutral-400 text-xs xl:text-sm">
+            <tr>
+              <td class="align-top py-3 pr-8 border-t border-neutral-400 dark:border-neutral-700">Discipline</td>
+              <td class="align-top py-3 dark:text-neutral-500 border-t border-neutral-400 dark:border-neutral-700">Digital Strategy <br>Digital Design, <br>Web design</td>
+            </tr>
+            <tr>
+              <td class="align-top py-3 pr-8 border-t border-neutral-400 dark:border-neutral-700">Technology</td>
+              <td class="align-top py-3 dark:text-neutral-500 border-t border-neutral-400 dark:border-neutral-700">HTML, <br>CSS, <br>Figma, <br>Eleventy, <br>Tailwind, <br>AlpineJS</td>
+            </tr>
+
+            
+          </table>
+        </div>
+      </div>
+
+
+ 
+    </div>
+  </section>
+
+
 </main>
