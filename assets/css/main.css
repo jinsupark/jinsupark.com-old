@@ -750,6 +750,14 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -916,6 +924,10 @@ video {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-\[1440px\] {
@@ -1599,6 +1611,10 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .text-black {
@@ -2408,6 +2424,11 @@ video {
 
   .\32xl\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
