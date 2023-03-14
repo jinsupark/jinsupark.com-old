@@ -10,7 +10,7 @@ layout: layouts/base.njk
   
   {# Category Selector #}
   <div class="fixed z-[60] bottom-0 mb-4 md:mb-8 px-4 w-full flex items-center justify-center pointer-events-none gsap-footer">
-    <div class="flex items-center rounded-md bg-[#535353] shadow-lg overflow-auto pointer-events-auto">
+    <div class="flex items-center rounded-md bg-neutral-800 dark:bg-neutral-700 shadow-lg overflow-auto pointer-events-auto">
       <ul class="flex flex-1 items-center whitespace-nowrap pl-5 overflow-auto">
         <li class="flex items-center">
           <a class="h-[48px] md:h-[42px] pr-6 flex items-center font-medium text-sm text-white hover:text-white/80 duration-200 cursor-pointer" @click="filterID = 'all'">All</a>
@@ -52,20 +52,20 @@ layout: layouts/base.njk
 
   {# Layout Selector #}
   <div class="hidden md:flex fixed z-[60] right-0 bottom-0 mb-8 mr-8 items-center gsap-footer">
-    <div class="rounded-md bg-white dark:bg-black/80 backdrop-blur-md shadow-lg">
+    <div class="rounded-md bg-white backdrop-blur-md shadow-lg">
       <ul class="flex items-center gap-4 px-4">
         <li class="flex items-center">
-          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">
+          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32v89.6H89.6V32H0zM0 151.5v89.6H89.6V151.5H0zM89.6 270.9H0v89.6H89.6V270.9zM0 390.4V480H89.6V390.4H0zM119.5 32v89.6h89.6V32H119.5zm0 119.5v89.6h89.6V151.5H119.5zm89.6 119.5H119.5v89.6h89.6V270.9zM119.5 390.4V480h89.6V390.4H119.5zM328.5 32H238.9v89.6h89.6V32zm0 119.5H238.9v89.6h89.6V151.5zM238.9 270.9v89.6h89.6V270.9H238.9zm89.6 119.5H238.9V480h89.6V390.4zM358.4 32v89.6H448V32H358.4zm0 119.5v89.6H448V151.5H358.4zM448 270.9H358.4v89.6H448V270.9zM358.4 390.4V480H448V390.4H358.4z"/></svg>
           </a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">
+          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black/40 hover:text-black/80 duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32H128V160H0V32zM0 192H128V320H0V192zM128 352V480H0V352H128zM160 32H288V160H160V32zM288 192V320H160V192H288zM160 352H288V480H160V352zM448 32V160H320V32H448zM320 192H448V320H320V192zM448 352V480H320V352H448z"/></svg>
           </a>
         </li>
         <li class="flex items-center">
-          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black hover:text-black/80 dark:text-white dark:hover:text-white/80 duration-200">
+          <a href="#" class="h-[48px] md:h-[42px] flex items-center font-medium text-sm text-black hover:text-black/80 duration-200">
             <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 32H0V224H192V32zm0 256H0V480H192V288zM256 32V224H448V32H256zM448 288H256V480H448V288z"/></svg>
           </a>
         </li>
@@ -76,12 +76,16 @@ layout: layouts/base.njk
   <section class="gsap-content" style="opacity: 0;">
     {# Circle #}
     <div class="sticky top-0 z-10 flex items-center justify-center h-[450px] sm:h-[550px] xl:h-[550px] 2xl:h-[800px] pt-[12vw] sm:pt-0 gsap-hero">
-      <div class="relative w-full max-w-[320px] sm:max-w-[384px] lg:max-w-[384px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white to-white/0 dark:from-white/20 dark:to-white/0 gsap-circle"></div>
+      <div class="relative w-full max-w-[320px] sm:max-w-[384px] lg:max-w-[384px] 2xl:max-w-[600px] aspect-square mx-auto rounded-full bg-gradient-to-r from-white/80 to-white/0 dark:from-gray-200/20 dark:to-black gsap-circle"></div>
     </div>
 
-    <div class="relative z-40 w-full bg-white dark:bg-[#181818]">
-      <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-8 py-7">
-        <h3 class="mb-8 md:mb-0 w-full max-w-[540px] 2xl:max-w-[600px] text-black/50 dark:text-white/50 text-base 2xl:text-lg font-medium leading-snug 2xl:leading-[1.40]">
+    <div class="relative z-40 w-full bg-white dark:bg-[#131313]">
+      {# <div class="px-5 md:px-8">
+        <div class="h-px bg-slate-200 dark:bg-slate-200"></div>
+      </div> #}
+
+      <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-8 py-8">
+        <h3 class="mb-8 md:mb-0 w-full max-w-[540px] 2xl:max-w-[600px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
           Jin Su Park is multi-disciplinary Product Designer and Developer, currently living in New York. His work elevates brand clarity and product potential through thoughtful dialogue, and incredible attention to detail.
         </h3>
         {# <h3 class="mb-8 md:mb-0 w-full max-w-[512px] text-black/50 dark:text-white/50 text-base font-regular leading-snug">
@@ -111,40 +115,40 @@ layout: layouts/base.njk
         }'
       >
         <li class="grid-sizer" style="width: 25%"></li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]" style="width: 25%">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]" style="width: 25%">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
-        <li class="grid-item bg-[#EDEDED] dark:bg-[#202020] overflow-hidden h-[200px]">
+        <li class="grid-item bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden h-[200px]">
           gege
         </li>
         
@@ -152,7 +156,7 @@ layout: layouts/base.njk
       </ul> #}
 
       <ul class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 gap-0.5 sm:gap-1">
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -160,7 +164,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'art-direction'">
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'art-direction'">
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -168,7 +172,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -176,7 +180,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
@@ -184,7 +188,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -192,7 +196,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -200,7 +204,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -208,7 +212,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
@@ -216,7 +220,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -224,7 +228,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -232,7 +236,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -240,7 +244,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
@@ -248,7 +252,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -256,7 +260,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -264,7 +268,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -272,7 +276,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
@@ -280,7 +284,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -288,7 +292,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -296,7 +300,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -304,7 +308,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
@@ -312,7 +316,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -320,7 +324,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -328,7 +332,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -336,7 +340,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
@@ -344,7 +348,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -352,7 +356,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -360,7 +364,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -368,7 +372,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
@@ -376,7 +380,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-white w-[100%] h-[100%] rounded-full"></div>
@@ -384,7 +388,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-black w-[100%] h-[100%] rounded-full"></div>
@@ -392,7 +396,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#7A1B1B] w-[100%] h-[100%] rounded-full"></div>
@@ -400,7 +404,7 @@ layout: layouts/base.njk
             </div>
           </a>
         </li>
-        <li class="bg-[#EDEDED] dark:bg-[#202020] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
+        <li class="bg-[#F6F6F6] dark:bg-[#1B1B1B] overflow-hidden" x-show="filterID == 'all' || filterID == 'branding'" x-transition.enter.duration.600ms>
           <a href="/works/sample" class="relative flex items-center justify-center aspect-square xl:aspect-[4/3] group/thumb">
             <div class="relative w-[60%] xl:w-[50%] aspect-square rounded-tr-full rounded-bl-full rounded-br-full overflow-hidden">
               <div class="bg-[#2B3E6E] w-[100%] h-[100%] rounded-full"></div>
