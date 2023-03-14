@@ -1476,6 +1476,10 @@ video {
   text-align: justify;
 }
 
+.align-top {
+  vertical-align: top;
+}
+
 .font-sans {
   font-family: PPNeueMontreal, sans-serif;
 }
