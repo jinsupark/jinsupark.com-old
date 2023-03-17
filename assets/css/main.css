@@ -1591,6 +1591,16 @@ video {
   background-color: rgb(38 38 38 / 0.4);
 }
 
+.dark .dark\:bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-neutral-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:from-gray-200\/20 {
   --tw-gradient-from: rgb(229 231 235 / 0.2);
   --tw-gradient-to: rgb(229 231 235 / 0);
