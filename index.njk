@@ -6,13 +6,13 @@ layout: layouts/base.njk
 
 
 <main data-barba="container" data-barba-namespace="home" class="gsap-container xh-screen xoverflow-hidden">
-  <h1 class="fixed top-0 left-0 mt-5 ml-5 sm:mt-8 sm:ml-8 z-50 font-medium text-base leading-none text-black dark:text-white gsap-header">
-    <a href="/">
+  <h1 class="fixed top-0 left-0 mt-5 ml-5 sm:mt-8 sm:ml-8 z-50 font-medium text-base leading-none text-black dark:text-white gsap-header" style="transform: translateY(-100px); opacity: 0;">
+    <span>
       © Selected Works 08 &#8212; 23
-    </a>
+    </span>
   </h1>
 
-  <div class="fixed top-0 right-0 mt-5 mr-5 sm:mt-8 sm:mr-8 z-50 gsap-header">
+  <div class="fixed top-0 right-0 mt-5 mr-5 sm:mt-8 sm:mr-8 z-50 gsap-header" style="transform: translateY(-100px); opacity: 0;">
     <ul class="flex items-center gap-5">
       <li class="flex items-center">
         <a href="/about" class="font-medium text-[15px] text-black/40 hover:text-black/80 dark:text-white/40 dark:hover:text-white/80 duration-200">About</a>
@@ -42,7 +42,7 @@ layout: layouts/base.njk
   </div>
   
   {# Category Selector #}
-  <div class="fixed z-[60] bottom-0 mb-4 md:mb-8 px-4 w-full flex items-center justify-center pointer-events-none gsap-footer">
+  <div class="fixed z-[60] bottom-0 mb-4 md:mb-8 px-4 w-full flex items-center justify-center pointer-events-none gsap-footer" style="transform: translateY(100px); opacity: 0;">
     <div class="flex items-center rounded-md bg-neutral-800 dark:bg-neutral-700 shadow-lg overflow-auto pointer-events-auto">
       <ul class="flex flex-1 items-center whitespace-nowrap pl-5 overflow-auto">
         <li class="flex items-center">
@@ -84,7 +84,7 @@ layout: layouts/base.njk
   </div>
 
   {# Layout Selector #}
-  <div class="hidden md:flex fixed z-[60] right-0 bottom-0 mb-8 mr-8 items-center gsap-footer">
+  <div class="hidden md:flex fixed z-[60] right-0 bottom-0 mb-8 mr-8 items-center gsap-footer" style="transform: translateY(100px); opacity: 0;">
     <div class="rounded-md bg-white backdrop-blur-md shadow-lg">
       <ul class="flex items-center gap-4 px-4">
         <li class="flex items-center">

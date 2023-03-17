@@ -70,17 +70,17 @@ document.addEventListener(
       delay: .2,
     });
 
-    gsap.from('.gsap-header', {
-      y: -100,
-      opacity: 0,
+    gsap.to('.gsap-header', {
+      y: 0,
+      opacity: 1,
       duration: 2,
       ease: 'expo.inOut',
       delay: .4
     });
 
-    gsap.from('.gsap-footer', {
-      y: 100,
-      opacity: 0,
+    gsap.to('.gsap-footer', {
+      y: 0,
+      opacity: 1,
       duration: 2,
       ease: 'expo.inOut',
       delay: .4,
@@ -167,6 +167,7 @@ document.addEventListener(
 
             let slideInHeader = gsap.to('.gsap-header', {
               y: 0,
+              opacity: 1,
               duration: .4,
               ease: 'expo.out',
               delay: 0,
@@ -174,6 +175,7 @@ document.addEventListener(
 
             let slideInFooter = gsap.to('.gsap-footer', {
               y: 0,
+              opacity: 1,
               duration: .4,
               ease: 'expo.out',
               delay: 0,
@@ -249,6 +251,7 @@ document.addEventListener(
 
             let slideInHeader = gsap.to('.gsap-header', {
               y: 0,
+              opacity: 1,
               duration: 1,
               ease: 'expo.inOut',
               delay: 0.4
@@ -256,6 +259,7 @@ document.addEventListener(
 
             let slideInFooter = gsap.to('.gsap-footer', {
               y: 0,
+              opacity: 1,
               duration: 1,
               ease: 'expo.inOut',
               delay: 0.4,
