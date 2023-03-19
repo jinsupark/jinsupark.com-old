@@ -219,7 +219,7 @@ document.addEventListener(
           beforeEnter() {
             window.scrollTo(0, 0);
             gsap.set('.gsap-circle-card', {
-              x: '20%',
+              x: '25%',
             });
             gsap.set('.gsap-header', {
               y: -100,
