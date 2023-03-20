@@ -236,7 +236,7 @@ document.addEventListener(
             });
 
             let slideCard = gsap.to('.gsap-circle-card', {
-              translateX: '0',
+              x: '0',
               duration: 1,
               ease: 'expo.out',
               delay: 0,

@@ -638,6 +638,18 @@ video {
   margin-top: 96px;
 }
 
+.ml-\[15\%\] {
+  margin-left: 15%;
+}
+
+.mt-\[5\%\] {
+  margin-top: 5%;
+}
+
+.ml-\[8\%\] {
+  margin-left: 8%;
+}
+
 .inline {
   display: inline;
 }
@@ -1330,6 +1342,10 @@ video {
 
 .hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
+}
+
+.group\/thumb:hover .group-hover\/thumb\:ml-\[5\%\] {
+  margin-left: 5%;
 }
 
 .group\/thumb:hover .group-hover\/thumb\:translate-x-\[5\%\] {
