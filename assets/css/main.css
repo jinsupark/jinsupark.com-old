@@ -1090,12 +1090,22 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-yellow-400 {
+  --tw-gradient-from: #facc15;
+  --tw-gradient-to: rgb(250 204 21 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-white\/0 {
   --tw-gradient-to: rgb(255 255 255 / 0);
 }
 
 .to-pink-600 {
   --tw-gradient-to: #db2777;
+}
+
+.to-orange-600 {
+  --tw-gradient-to: #ea580c;
 }
 
 .bg-clip-text {
