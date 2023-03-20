@@ -650,6 +650,14 @@ video {
   margin-left: 8%;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-\[48px\] {
+  margin-top: 48px;
+}
+
 .inline {
   display: inline;
 }
@@ -730,6 +738,14 @@ video {
   height: 100vh;
 }
 
+.h-\[140px\] {
+  height: 140px;
+}
+
+.h-\[160px\] {
+  height: 160px;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -770,6 +786,14 @@ video {
   width: 1px;
 }
 
+.w-\[33\.333\%\] {
+  width: 33.333%;
+}
+
+.w-\[33\.3333\%\] {
+  width: 33.3333%;
+}
+
 .max-w-\[320px\] {
   max-width: 320px;
 }
@@ -792,6 +816,22 @@ video {
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-\[800px\] {
+  max-width: 800px;
+}
+
+.max-w-\[576px\] {
+  max-width: 576px;
+}
+
+.max-w-\[640px\] {
+  max-width: 640px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .flex-1 {
@@ -896,6 +936,30 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.-space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(-1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(-1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-1rem * var(--tw-space-x-reverse));
+  margin-left: calc(-1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(-0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -944,6 +1008,11 @@ video {
 .border-neutral-300 {
   --tw-border-opacity: 1;
   border-color: rgb(212 212 212 / var(--tw-border-opacity));
+}
+
+.border-neutral-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 82 / var(--tw-border-opacity));
 }
 
 .bg-\[\#EDEDED\] {
@@ -1015,8 +1084,23 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-purple-400 {
+  --tw-gradient-from: #c084fc;
+  --tw-gradient-to: rgb(192 132 252 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-white\/0 {
   --tw-gradient-to: rgb(255 255 255 / 0);
+}
+
+.to-pink-600 {
+  --tw-gradient-to: #db2777;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .fill-current {
@@ -1056,6 +1140,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-\[160px\] {
@@ -1098,6 +1187,14 @@ video {
   padding-top: 96px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .align-top {
   vertical-align: top;
 }
@@ -1133,6 +1230,16 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-medium {
@@ -1217,6 +1324,15 @@ video {
 
 .text-white\/40 {
   color: rgb(255 255 255 / 0.4);
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.text-neutral-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -1478,6 +1594,16 @@ video {
   color: rgb(255 255 255 / 0.8);
 }
 
+.dark .dark\:hover\:text-neutral-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:text-neutral-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 229 229 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:col-span-1 {
     grid-column: span 1 / span 1;
@@ -1510,6 +1636,15 @@ video {
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .sm\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .sm\:text-\[120px\] {
+    font-size: 120px;
   }
 }
 
@@ -1611,6 +1746,10 @@ video {
     max-width: 700px;
   }
 
+  .\32xl\:max-w-\[640px\] {
+    max-width: 640px;
+  }
+
   .\32xl\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -1623,5 +1762,10 @@ video {
   .\32xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }

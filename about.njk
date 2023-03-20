@@ -28,69 +28,117 @@ layout: layouts/base.njk
     <div class="relative z-40 w-full bg-white dark:bg-[#181818]">
       <div class="grid grid-cols-1 sm:grid-cols-2 px-5 md:px-8 py-8">
         <div>
+          <div class="mb-4 text-base text-neutral-300 dark:text-neutral-700">Introduction</div>
           <h1 class="text-4xl sm:text-5xl 2xl:text-6xl font-regular text-neutral-300 dark:text-neutral-700 mb-6 tracking-tight">
-            Curiosity
-            {# <br>
-            <span class="text-neutral-300 dark:text-neutral-600">(2023)</span> #}
+            Who knows <br>what's possible <br>tomorrow
           </h1>
-          {# <div class="w-9 h-[2px] mb-12 bg-neutral-700 dark:bg-neutral-200"></div> #}
-          
         </div>
 
         <div>
           <div x-data="{ open: false }">
-            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
             </p>
 
-            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+            {# <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
               Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
-            </p>
+            </p> #}
 
             <a x-show="!open" @click="open = true" class="font-medium text-base 2xl:text-lg dark:text-neutral-200 dark:hover:text-neutral-300 cursor-pointer">Read more</a>
 
             <div x-show="open" x-transition.opacity>
-              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
                 Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
               </p>
 
-              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
                 I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
               </p>
             </div>
           </div>
           
+          <table class="w-full mt-[160px] dark:text-neutral-400 text-xs xl:text-sm">
+            <tr>
+              <td class="align-top py-3 pr-8 text-neutral-900 dark:text-neutral-400 border-t border-neutral-300 dark:border-neutral-700">Client</td>
+              <td class="align-top py-3 text-neutral-500 dark:text-neutral-500 border-t border-neutral-300 dark:border-neutral-700">Fergus</td>
+            </tr>
+            <tr>
+              <td class="align-top py-3 pr-8 text-neutral-900 dark:text-neutral-400 border-t border-neutral-300 dark:border-neutral-700">Year</td>
+              <td class="align-top py-3 text-neutral-500 dark:text-neutral-500 border-t border-neutral-300 dark:border-neutral-700">2022</td>
+            </tr>
+            <tr>
+              <td class="align-top py-3 pr-8 text-neutral-900 dark:text-neutral-400 border-t border-neutral-300 dark:border-neutral-700">Discipline</td>
+              <td class="align-top py-3 text-neutral-500 dark:text-neutral-500 border-t border-neutral-300 dark:border-neutral-700">Digital Strategy, Digital Design, Web design</td>
+            </tr>
+            <tr>
+              <td class="align-top py-3 pr-8 text-neutral-900 dark:text-neutral-400 border-t border-neutral-300 dark:border-neutral-700">Technology</td>
+              <td class="align-top py-3 text-neutral-500 dark:text-neutral-500 border-t border-neutral-300 dark:border-neutral-700">HTML, CSS, Figma, Eleventy, Tailwind, AlpineJS</td>
+            </tr>
+          </table>
 
+          {# <ul class="flex items-center -space-x-6 mt-[48px] pb-[160px]">
+            <li class="aspect-square rounded-full w-[33.3333%] px-4 py-10 border border-neutral-300 dark:border-neutral-700 flex-none flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-xl font-medium text-black/80 dark:text-white/80 tracking-tight">
+                  Curiosity
+                </div>
+              </div>
+            </li>
+            
+            <li class="aspect-square rounded-full w-[33.3333%] px-4 py-10 border border-neutral-300 dark:border-neutral-700 flex-none flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-xl font-medium text-black/80 dark:text-white/80 tracking-tight">
+                  Insight
+                </div>
+              </div>
+            </li>
+            
+            <li class="aspect-square rounded-full w-[33.3333%] px-4 py-10 border border-neutral-300 dark:border-neutral-700 flex-none flex items-center justify-center">
+              <div class="text-center">
+                <div class="text-xl font-medium text-black/80 dark:text-white/80 tracking-tight">
+                  Potential
+                </div>
+              </div>
+            </li>
 
-          <div class="flex items-center gap-8 mt-[96px] max-w-[500px]">
-            <div>
-              <div class="text-4xl font-medium text-black/80 dark:text-white/80 tracking-tight">
-                42
-              </div>
-              <div class="mt-1 text-sm leading-tight font-medium text-black/50 dark:text-white/50">
-                Projects <br class="inline sm:hidden">Published
-              </div>
-            </div>
-            <div class="w-px h-[70px] bg-neutral-400 dark:bg-neutral-800"></div>
-            <div>
-              <div class="text-4xl font-medium text-black/80 dark:text-white/80 tracking-tight">
-                15+
-              </div>
-              <div class="mt-1 text-sm leading-tight font-medium text-black/50 dark:text-white/50">
-                Projects <br class="inline sm:hidden">Published
-              </div>
-            </div>
-            <div class="w-px h-[70px] bg-neutral-400 dark:bg-neutral-800"></div>
-            <div>
-              <div class="text-4xl font-medium text-black/80 dark:text-white/80 tracking-tight">
-                510
-              </div>
-              <div class="mt-1 text-sm leading-tight font-medium text-black/50 dark:text-white/50">
-                Projects <br class="inline sm:hidden">Published
-              </div>
-            </div>
+          </ul> #}
+          
 
-          </div>
+          {# <ul class="flex items-center -space-x-4 mt-[96px]">
+            <li class="aspect-square rounded-full h-[160px] px-4 py-10 border border-neutral-300 dark:border-neutral-700 flex-none flex items-center justify-center">
+              <div class="text-center">
+                <div class="mb-2 text-3xl font-medium text-black/80 dark:text-white/80 tracking-tight">
+                  42
+                </div>
+                <div class="mt-1 text-sm leading-tight font-medium text-black/50 dark:text-white/50">
+                  Projects <br class="inline sm:hiddenx">Published
+                </div>
+              </div>
+            </li>
+            
+            <li class="aspect-square rounded-full h-[160px] px-4 py-10 border border-neutral-300 dark:border-neutral-700 flex-none flex items-center justify-center">
+              <div class="text-center">
+                <div class="mb-2 text-3xl font-medium text-black/80 dark:text-white/80 tracking-tight">
+                  15+
+                </div>
+                <div class="mt-1 text-sm leading-tight font-medium text-black/50 dark:text-white/50">
+                  Projects <br class="inline sm:hiddenx">Published
+                </div>
+              </div>
+            </li>
+            
+            <li class="aspect-square rounded-full h-[160px] px-4 py-10 border border-neutral-300 dark:border-neutral-700 flex-none flex items-center justify-center">
+              <div class="text-center">
+                <div class="mb-2 text-3xl font-medium text-black/80 dark:text-white/80 tracking-tight">
+                  510
+                </div>
+                <div class="mt-1 text-sm leading-tight font-medium text-black/50 dark:text-white/50">
+                  Projects <br class="inline sm:hiddenx">Published
+                </div>
+              </div>
+            </li>
+
+          </ul> #}
 
           {# <table class="w-full mt-[96px] dark:text-neutral-400 text-xs xl:text-sm">
             <tr>
@@ -117,10 +165,15 @@ layout: layouts/base.njk
         </div>
       </div>
 
-      <div class="px-5 md:px-8 pt-[96px]">
-        <div class="h-2 bg-neutral-200/40 dark:bg-neutral-800/40">
+      <div class="grid grid-cols-2 gap-1">
+        <div class="col-span-2 sm:col-span-1">
+          <img src="https://cdn.dribbble.com/userupload/4797787/file/original-dd855009ad53809455f97f6558cc6de0.jpg?compress=1&resize=1504x838" class="w-full aspect-[4/3] object-cover">
+        </div>
+        <div class="col-span-2 sm:col-span-1">
+          <img src="https://cdn.dribbble.com/userupload/4606557/file/original-ad83b97ed87fa135e039e4680755da2d.jpg?compress=1&resize=1504x1003" class="w-full aspect-[4/3] object-cover">
         </div>
       </div>
+
 
       <div class="grid grid-cols-1 sm:grid-cols-2 px-5 md:px-8 py-8">
         <div>
@@ -135,22 +188,22 @@ layout: layouts/base.njk
 
         <div>
           <div x-data="{ open: false }">
-            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
             </p>
 
-            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+            {# <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
               Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
-            </p>
+            </p> #}
 
             <a x-show="!open" @click="open = true" class="font-medium text-base 2xl:text-lg dark:text-neutral-200 dark:hover:text-neutral-300 cursor-pointer">Read more</a>
 
             <div x-show="open" x-transition.opacity>
-              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
                 Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
               </p>
 
-              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
                 I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
               </p>
             </div>
@@ -178,8 +231,12 @@ layout: layouts/base.njk
         </div>
       </div>
 
-      <div class="px-5 md:px-8 pt-[96px]">
-        <div class="h-2 bg-neutral-200/40 dark:bg-neutral-800/40">
+      <div class="grid grid-cols-2 gap-1">
+        <div class="col-span-2 sm:col-span-1">
+          <img src="https://cdn.dribbble.com/userupload/4797787/file/original-dd855009ad53809455f97f6558cc6de0.jpg?compress=1&resize=1504x838" class="w-full aspect-[4/3] object-cover">
+        </div>
+        <div class="col-span-2 sm:col-span-1">
+          <img src="https://cdn.dribbble.com/userupload/4606557/file/original-ad83b97ed87fa135e039e4680755da2d.jpg?compress=1&resize=1504x1003" class="w-full aspect-[4/3] object-cover">
         </div>
       </div>
 
@@ -198,22 +255,22 @@ layout: layouts/base.njk
 
         <div>
           <div x-data="{ open: false }">
-            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
             </p>
 
-            <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+            {# <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
               Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
-            </p>
+            </p> #}
 
             <a x-show="!open" @click="open = true" class="font-medium text-base 2xl:text-lg dark:text-neutral-200 dark:hover:text-neutral-300 cursor-pointer">Read more</a>
 
             <div x-show="open" x-transition.opacity>
-              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
                 Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
               </p>
 
-              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+              <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
                 I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
               </p>
             </div>
@@ -284,7 +341,7 @@ layout: layouts/base.njk
         </div>
 
         <div class="pb-[160px]">
-          <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-base 2xl:text-lg leading-snug font-medium">
+          <p class="mb-5 last:mb-0 w-full max-w-[600px] 2xl:max-w-[700px] text-black/50 dark:text-white/50 text-justify text-base 2xl:text-lg leading-snug font-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum.
           </p>
 
