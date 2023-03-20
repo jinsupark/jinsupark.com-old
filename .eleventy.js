@@ -1,6 +1,15 @@
 module.exports = function (eleventyConfig) {
   let pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+  let pluginWebc = require('@11ty/eleventy-plugin-webc');
+
   let fs = require('fs');
+
+  eleventyConfig.addPlugin(pluginWebc, {
+    // Glob to find no-import global components
+    // This path is relative to the project-root!
+    // The default value is shown:
+    components: '_components/**/*.webc',
+  });
 
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
