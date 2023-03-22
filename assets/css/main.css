@@ -1883,6 +1883,10 @@ video {
     padding-top: 0px;
   }
 
+  .sm\:pr-8 {
+    padding-right: 2rem;
+  }
+
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
