@@ -19,43 +19,6 @@
   font-weight: 500;
 }
 
-@keyframes glowfly {
-  0% {
-    background-color: hsla(240, 30%, 60%, 0.6);
-  }
-  10% {
-    background-color: hsla(192, 30%, 60%, 0.6);
-  }
-  20% {
-    background-color: hsla(144, 30%, 60%, 0.6);
-  }
-  30% {
-    background-color: hsla(96, 30%, 60%, 0.6);
-  }
-  40% {
-    background-color: hsla(48, 30%, 60%, 0.6);
-  }
-  50% {
-    background-color: hsla(0, 30%, 60%, 0.6);
-  }
-  60% {
-    background-color: hsla(48, 30%, 60%, 0.6);
-  }
-  70% {
-    background-color: hsla(96, 30%, 60%, 0.6);
-  }
-  80% {
-    background-color: hsla(144, 30%, 60%, 0.6);
-  }
-  90% {
-    background-color: hsla(192, 30%, 60%, 0.6);
-  }
-  100% {
-    background-color: hsla(240, 30%, 60%, 0.6);
-  }
-}
-
-.gsap-glowfly-outer {
-  background-color: hsla(240, 30%, 60%, 0.6);
-  animation: 48s glowfly infinite;
+.markdown > p {
+  @apply mb-5 last:mb-0
 }

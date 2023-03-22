@@ -1,10 +1,11 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    './_includes/**/*.{njk,js}',
-    './assets/**/*.{njk,js}',
-    './works/**/*.{njk,js}',
-    './*.{njk,js}',
+    // './_includes/**/*.{njk,js}',
+    // './assets/**/*.{njk,js}',
+    // './works/**/*.{njk,js}',
+    // './*.{njk,js}',
+    './_site/**/*.{html,css,js}',
   ],
   theme: {
     container: {
@@ -42,7 +43,7 @@ module.exports = {
         bold: 700,
       },
       colors: {
-        // 'background-light': 
+        // 'background-light':
         // 'primary': {
         //   50: '#ecfdf5',
         //   50: '#d1fae5',
