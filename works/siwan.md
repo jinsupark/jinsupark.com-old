@@ -21,22 +21,22 @@ workImages:
 - url: 'siwan-02.jpg'
   alt: 'A test alt text'
   col: 1
-- url: 'siwan-07.jpg'
-  alt: 'A test alt text'
-  col: 1
-- url: 'siwan-08.jpg'
-  alt: 'A test alt text'
-  col: 1
 - url: 'siwan-09.jpg'
   alt: 'A test alt text'
   col: 1
 - url: 'siwan-10.jpg'
   alt: 'A test alt text'
   col: 1
+- url: 'siwan-07.jpg'
+  alt: 'A test alt text'
+  col: 1
 - url: 'siwan-11.jpg'
   alt: 'A test alt text'
   col: 1
 - url: 'siwan-12.jpg'
+  alt: 'A test alt text'
+  col: 1
+- url: 'siwan-08.jpg'
   alt: 'A test alt text'
   col: 1
 # - url: 'siwan-13.jpg'
