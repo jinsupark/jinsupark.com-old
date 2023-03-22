@@ -922,6 +922,14 @@ video {
   max-width: 384px;
 }
 
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
+.max-w-\[520px\] {
+  max-width: 520px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
