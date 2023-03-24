@@ -59,6 +59,6 @@ workImages:
 #   col: 1
 ---
 
-I wanted the design of the brand to be a departure from styles typically seen in feminine brands but still  wanted the brand to express warmth and softness without the use of colors typically seen
+The design of the brand strongly features colors of light beige and persimmon, to capture a strong sense of warmth and calmness. The client to be a departure from styles typically seen in feminine brands but still  wanted the brand to express warmth and softness without the use of colors typically seen
 
 I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
