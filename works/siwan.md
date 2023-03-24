@@ -61,4 +61,4 @@ workImages:
 
 The design of the brand strongly features colors of light beige and persimmon, to capture a strong sense of warmth and calmness. Naturally, the idea of conveying warmth lead me to consider the soft feeling of touch. 
 
-This lead me to develop the motto "curated by tomorrow's touch" to serve as an anchoring brand feature that could be applied in various ways to not only compliment the brand but as a design feature that could be printed or embossed on a wide range of packaging and labels.
+This lead me to develop the motto "curated by tomorrow's touch" to serve as an anchoring brand feature that could be applied in various ways to not only compliment the brand but as a design feature that could be printed or embossed on a wide range of packaging, labels, and materials.
