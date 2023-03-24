@@ -59,6 +59,6 @@ workImages:
 #   col: 1
 ---
 
-The design of the brand strongly features colors of light beige and persimmon, to capture a strong sense of warmth and calmness. The client to be a departure from styles typically seen in feminine brands but still  wanted the brand to express warmth and softness without the use of colors typically seen
+The design of the brand strongly features colors of light beige and persimmon, to capture a strong sense of warmth and calmness. Naturally, the idea of conveying warmth lead me to consider the soft feeling of touch. 
 
-I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
+This lead me to develop the motto "curated by tomorrow's touch" to serve as an anchoring brand feature that could be applied in various ways to not only compliment the brand but as a design feature that could be printed or embossed on a wide range of packaging and labels.
