@@ -12,7 +12,7 @@ year: '2022'
 discipline: 'Branding, Art Direction, Identity, Packaging'
 technology: 'Illustrator, Photoshop, Figma, After Effects'
 
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at ligula pharetra, viverra nisi eget, venenatis metus. Curabitur ante odio, pellentesque posuere ipsum volutpat, consectetur dignissim lacus. Vestibulum ut faucibus risus. Aliquam dignissim ligula eu ornare vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+excerpt: Siwan is a Melbourne, Australia based luxury womens clothing brand currently in development. I was contracted to establish the artistic direction and design an identity that captured the client's vision. The treatment of the brand had to be delivered in a simplistic and flexible manner to be suitable for a broad range of applications.
 
 workImages:
 - url: 'siwan-03.jpg'
@@ -59,7 +59,6 @@ workImages:
 #   col: 1
 ---
 
-
-Nulla lacinia, ex in hendrerit vehicula, elit est varius erat, vitae rutrum quam nulla eget nibh. Curabitur sollicitudin sodales leo id sollicitudin. Maecenas nec lorem at massa venenatis vestibulum. In hac habitasse platea dictumst. Proin non tortor non eros aliquam pretium quis eu metus.
+I wanted the design of the brand to be a departure from styles typically seen in feminine brands but still  wanted the brand to express warmth and softness without the use of colors typically seen
 
 I'm always curious to hear from new people about new thoughts, ideas, problems, projects or collaborations. Proin non tortor non eros aliquam pretium quis eu metus.
