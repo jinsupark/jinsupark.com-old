@@ -79,8 +79,11 @@ layout: layouts/base.njk
 
       <div class="grid grid-cols-2 gap-1">
         {%- for workImage in workImages -%}
-          <div class="{% if workImage.col == 1 %}col-span-2 sm:col-span-1{% else %}col-span-2{% endif %} ">
-            <img src="/assets/img/works/{{ slug }}/{{ workImage.url }}" class="w-full aspect-[4/3] object-cover">
+          <div class="relative {% if workImage.col == 1 %}col-span-2 sm:col-span-1{% else %}col-span-2{% endif %} ">
+            <div class="absolute top-0 left-0 p-4 text-sm font-medium mix-blend-difference text-white">
+              {{ workImage.alt | safe }}
+            </div>
+            <img src="/assets/img/works/{{ year }}/{{ slug }}/{{ workImage.url }}" class="w-full aspect-[4/3] object-cover">
           </div>
         {%- endfor -%}
 

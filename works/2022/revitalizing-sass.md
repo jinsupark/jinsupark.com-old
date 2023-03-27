@@ -15,47 +15,47 @@ technology: 'Illustrator, Photoshop, Git'
 excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, which has empowered me to create my own CSS framework, Uniform CSS, I sought to contribute my design expertise to the open-source community by carefully revitalizing the iconic logo. I embraced the essence of the original design while introducing subtle yet impactful refinements.
 
 workImages:
-- url: 'siwan-03.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-01.png'
+  alt: 'Before'
   col: 1
-- url: 'siwan-02.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-02.png'
+  alt: 'After'
   col: 1
-- url: 'siwan-09.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-03.png'
+  alt: ''
   col: 1
-- url: 'siwan-10.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-04.png'
+  alt: ''
   col: 1
-- url: 'siwan-07.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-02.png'
+  alt: ''
   col: 1
-- url: 'siwan-11.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-02.png'
+  alt: ''
   col: 1
-- url: 'siwan-12.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-02.png'
+  alt: ''
   col: 1
-- url: 'siwan-08.jpg'
-  alt: 'A test alt text'
+- url: 'revitalizing-sass-02.png'
+  alt: ''
   col: 1
 # - url: 'siwan-13.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 # - url: 'siwan-14.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 - url: 'siwan-04.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-05.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 # - url: 'siwan-14.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 # - url: 'siwan-06.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 ---
 

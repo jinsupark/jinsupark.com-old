@@ -16,46 +16,46 @@ excerpt: Siwan, a burgeoning luxury women's clothing brand, hails from the vibra
 
 workImages:
 - url: 'siwan-03.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-02.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-09.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-10.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-07.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-11.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-12.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-08.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 # - url: 'siwan-13.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 # - url: 'siwan-14.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 - url: 'siwan-04.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 - url: 'siwan-05.jpg'
-  alt: 'A test alt text'
+  alt: ''
   col: 1
 # - url: 'siwan-14.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 # - url: 'siwan-06.jpg'
-#   alt: 'A test alt text'
+#   alt: ''
 #   col: 1
 ---
 
