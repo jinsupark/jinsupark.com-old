@@ -15,48 +15,24 @@ technology: 'Illustrator, Photoshop, Git'
 excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, which has empowered me to create my own CSS framework, Uniform CSS, I sought to contribute my design expertise to the open-source community by carefully revitalizing the iconic logo. I embraced the essence of the original design while introducing subtle yet impactful refinements.
 
 workImages:
-- url: 'revitalizing-sass-01.png'
-  alt: 'Before'
-  col: 1
-- url: 'revitalizing-sass-02.png'
-  alt: 'After'
-  col: 1
 - url: 'revitalizing-sass-03.png'
   alt: ''
   col: 1
 - url: 'revitalizing-sass-04.png'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-02.png'
+- url: 'revitalizing-sass-05.png'
   alt: ''
+  col: 1
+- url: 'revitalizing-sass-06.png'
+  alt: ''
+  col: 1
+- url: 'revitalizing-sass-01.png'
+  alt: 'Before'
   col: 1
 - url: 'revitalizing-sass-02.png'
-  alt: ''
+  alt: 'After'
   col: 1
-- url: 'revitalizing-sass-02.png'
-  alt: ''
-  col: 1
-- url: 'revitalizing-sass-02.png'
-  alt: ''
-  col: 1
-# - url: 'siwan-13.jpg'
-#   alt: ''
-#   col: 1
-# - url: 'siwan-14.jpg'
-#   alt: ''
-#   col: 1
-- url: 'siwan-04.jpg'
-  alt: ''
-  col: 1
-- url: 'siwan-05.jpg'
-  alt: ''
-  col: 1
-# - url: 'siwan-14.jpg'
-#   alt: ''
-#   col: 1
-# - url: 'siwan-06.jpg'
-#   alt: ''
-#   col: 1
 ---
 
 During the design process, I meticulously compared the new logo against the original, identifying stress points where the spacing and overall balance required adjustments. This careful approach ensured that the refreshed logo maintained visual harmony while addressing areas that were previously too tight or too loose.
