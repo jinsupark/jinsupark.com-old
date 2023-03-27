@@ -1,7 +1,7 @@
 ---
 layout: layouts/work.njk
 title: Siwan
-heading: "Clothing brand curated <br>by tomorrow's touch"
+headline: "Timeless Elegance <br>Meets Adaptable Design"
 bgColor: '#c69874'
 slug: 'siwan'
 thumbnail: 'siwan-thumb.jpg'
