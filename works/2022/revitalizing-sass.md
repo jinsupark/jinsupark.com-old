@@ -15,22 +15,28 @@ technology: 'Illustrator, Photoshop, Git'
 excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, which has empowered me to create my own CSS framework, Uniform CSS, I sought to contribute my design expertise to the open-source community by carefully revitalizing the iconic logo. I embraced the essence of the original design while introducing subtle yet impactful refinements.
 
 workImages:
-- url: 'revitalizing-sass-03.png'
+- url: 'revitalizing-sass-03.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-04.png'
+- url: 'revitalizing-sass-04.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-05.png'
+- url: 'revitalizing-sass-05.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-06.png'
+- url: 'revitalizing-sass-06.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-01.png'
+- url: 'revitalizing-sass-07.jpg'
+  alt: ''
+  col: 1
+- url: 'revitalizing-sass-08.jpg'
+  alt: ''
+  col: 1
+- url: 'revitalizing-sass-01.jpg'
   alt: 'Before'
   col: 1
-- url: 'revitalizing-sass-02.png'
+- url: 'revitalizing-sass-02.jpg'
   alt: 'After'
   col: 1
 ---
