@@ -2,7 +2,7 @@
 layout: layouts/work.njk
 title: 'Revitalizing Sass'
 headline: 'A Thoughtful and <br>Elegant Logo Refresh'
-bgColor: '#EF56A3'
+bgColor: '#93B4B4'
 slug: 'revitalizing-sass'
 thumbnail: 'revitalizing-sass-thumb.png'
 headingColor: 'from-pink-300 to-pink-600'
@@ -15,12 +15,6 @@ technology: 'Illustrator, Photoshop, Git'
 excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, which has empowered me to create my own CSS framework, Uniform CSS, I sought to contribute my design expertise to the open-source community by carefully revitalizing the iconic logo. I embraced the essence of the original design while introducing subtle yet impactful refinements.
 
 workImages:
-- url: 'revitalizing-sass-01.jpg'
-  alt: ''
-  col: 1
-- url: 'revitalizing-sass-02.jpg'
-  alt: ''
-  col: 1
 - url: 'revitalizing-sass-03.jpg'
   alt: ''
   col: 1
@@ -39,11 +33,11 @@ workImages:
 - url: 'revitalizing-sass-08.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-09.jpg'
-  alt: ''
+- url: 'revitalizing-sass-01.jpg'
+  alt: 'Before'
   col: 1
-- url: 'revitalizing-sass-10.jpg'
-  alt: ''
+- url: 'revitalizing-sass-02.jpg'
+  alt: 'After'
   col: 1
 ---
 

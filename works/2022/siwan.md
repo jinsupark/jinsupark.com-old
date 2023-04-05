@@ -2,10 +2,10 @@
 layout: layouts/work.njk
 title: Siwan
 headline: "Timeless Elegance <br>Meets Adaptable Design"
-bgColor: '#c69874'
+bgColor: '#360503'
 slug: 'siwan'
-thumbnail: 'siwan-thumb.jpg'
-headingColor: 'from-orange-300 to-amber-600'
+thumbnail: 'siwan-thumb.png'
+headingColor: 'from-orange-400 to-red-600'
 
 client: 'Siwan'
 year: '2022'
@@ -15,10 +15,28 @@ technology: 'Illustrator, Photoshop, Figma, After Effects'
 excerpt: Siwan, a burgeoning luxury women's clothing brand, hails from the vibrant city of Melbourne, Australia. I was commissioned to craft the artistic direction and devise an identity that encapsulated the client's aspirations. The client sought a minimalist and adaptable design, ensuring its suitability for diverse applications.
 
 workImages:
-- url: 'siwan-03.jpg'
+- url: 'siwan-01.jpg'
   alt: ''
   col: 1
 - url: 'siwan-02.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-03.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-04.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-05.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-06.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-07.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-08.jpg'
   alt: ''
   col: 1
 - url: 'siwan-09.jpg'
@@ -27,36 +45,6 @@ workImages:
 - url: 'siwan-10.jpg'
   alt: ''
   col: 1
-- url: 'siwan-07.jpg'
-  alt: ''
-  col: 1
-- url: 'siwan-11.jpg'
-  alt: ''
-  col: 1
-- url: 'siwan-12.jpg'
-  alt: ''
-  col: 1
-- url: 'siwan-08.jpg'
-  alt: ''
-  col: 1
-# - url: 'siwan-13.jpg'
-#   alt: ''
-#   col: 1
-# - url: 'siwan-14.jpg'
-#   alt: ''
-#   col: 1
-- url: 'siwan-04.jpg'
-  alt: ''
-  col: 1
-- url: 'siwan-05.jpg'
-  alt: ''
-  col: 1
-# - url: 'siwan-14.jpg'
-#   alt: ''
-#   col: 1
-# - url: 'siwan-06.jpg'
-#   alt: ''
-#   col: 1
 ---
 
 The essence of Siwan's identity lies in its elegant simplicity, allowing it to seamlessly integrate into a myriad of contexts. This approach provides the brand with the flexibility to evolve and adapt while maintaining its core vision. The result is a timeless and versatile identity that resonates with Siwan's sophisticated target audience.
