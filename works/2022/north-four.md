@@ -1,13 +1,13 @@
 ---
 layout: layouts/work.njk
-title: 'Revitalizing Sass'
+title: 'North Four'
 headline: 'A Thoughtful and <br>Elegant Logo Refresh'
 bgColor: '#93B4B4'
-slug: 'revitalizing-sass'
-thumbnail: 'revitalizing-sass-thumb.png'
-headingColor: 'from-pink-300 to-pink-600'
+slug: 'north-four'
+thumbnail: 'north-four-thumb.png'
+headingColor: 'text-teal-600'
 
-client: 'Sass'
+client: 'North Four'
 year: '2022'
 discipline: 'Identity, Branding'
 technology: 'Illustrator, Photoshop, Git'
@@ -15,29 +15,35 @@ technology: 'Illustrator, Photoshop, Git'
 excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, which has empowered me to create my own CSS framework, Uniform CSS, I sought to contribute my design expertise to the open-source community by carefully revitalizing the iconic logo. I embraced the essence of the original design while introducing subtle yet impactful refinements.
 
 workImages:
-- url: 'revitalizing-sass-03.jpg'
+- url: 'north-four-01.jpg'
+  alt: ''
+  col: 2
+- url: 'north-four-02.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-04.jpg'
+- url: 'north-four-03.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-05.jpg'
+- url: 'north-four-04.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-06.jpg'
+- url: 'north-four-05.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-07.jpg'
+- url: 'north-four-06.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-08.jpg'
+- url: 'north-four-07.jpg'
   alt: ''
   col: 1
-- url: 'revitalizing-sass-01.jpg'
-  alt: 'Before'
+- url: 'north-four-08.jpg'
+  alt: ''
+  col: 2
+- url: 'north-four-09.jpg'
+  alt: ''
   col: 1
-- url: 'revitalizing-sass-02.jpg'
-  alt: 'After'
+- url: 'north-four-10.jpg'
+  alt: ''
   col: 1
 ---
 

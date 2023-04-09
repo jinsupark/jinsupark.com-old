@@ -5,7 +5,7 @@ headline: "Timeless Elegance <br>Meets Adaptable Design"
 bgColor: '#360503'
 slug: 'siwan'
 thumbnail: 'siwan-thumb.png'
-headingColor: 'from-orange-400 to-red-600'
+headingColor: 'text-amber-700'
 
 client: 'Siwan'
 year: '2022'
@@ -17,7 +17,7 @@ excerpt: Siwan, a burgeoning luxury women's clothing brand, hails from the vibra
 workImages:
 - url: 'siwan-01.jpg'
   alt: ''
-  col: 1
+  col: 2
 - url: 'siwan-02.jpg'
   alt: ''
   col: 1
@@ -38,11 +38,23 @@ workImages:
   col: 1
 - url: 'siwan-08.jpg'
   alt: ''
-  col: 1
+  col: 2
 - url: 'siwan-09.jpg'
   alt: ''
   col: 1
 - url: 'siwan-10.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-11.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-12.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-13.jpg'
+  alt: ''
+  col: 1
+- url: 'siwan-14.jpg'
   alt: ''
   col: 1
 ---
