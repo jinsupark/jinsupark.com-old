@@ -18,6 +18,7 @@ workImages:
 - url: 'north-four-01.jpg'
   alt: ''
   col: 2
+  aspectVideo: true
 - url: 'north-four-02.jpg'
   alt: ''
   col: 1
@@ -39,6 +40,7 @@ workImages:
 - url: 'north-four-08.jpg'
   alt: ''
   col: 2
+  aspectVideo: true
 - url: 'north-four-09.jpg'
   alt: ''
   col: 1

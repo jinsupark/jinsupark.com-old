@@ -18,6 +18,7 @@ workImages:
 - url: 'hopmedic-01.jpg'
   alt: ''
   col: 2
+  aspectVideo: true
 - url: 'hopmedic-02.jpg'
   alt: ''
   col: 1
@@ -58,6 +59,12 @@ workImages:
   alt: ''
   col: 1
 - url: 'hopmedic-15.jpg'
+  alt: ''
+  col: 1
+- url: 'hopmedic-16.jpg'
+  alt: ''
+  col: 1
+- url: 'hopmedic-17.jpg'
   alt: ''
   col: 1
 ---

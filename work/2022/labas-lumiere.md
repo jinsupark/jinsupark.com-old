@@ -18,6 +18,7 @@ workImages:
 - url: 'labas-lumiere-01.jpg'
   alt: ''
   col: 2
+  aspectVideo: true
 - url: 'labas-lumiere-02.jpg'
   alt: ''
   col: 1
@@ -27,6 +28,7 @@ workImages:
 - url: 'labas-lumiere-04.jpg'
   alt: ''
   col: 2
+  aspectVideo: true
 - url: 'labas-lumiere-05.jpg'
   alt: ''
   col: 1

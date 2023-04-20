@@ -83,7 +83,17 @@ layout: layouts/base.njk
             <div class="absolute top-0 left-0 p-4 text-sm font-medium mix-blend-difference text-white">
               {{ workImage.alt | safe }}
             </div>
-            <img src="/assets/img/work/{{ year }}/{{ slug }}/{{ workImage.url }}" class="w-full {% if workImage.col == 2 %}col-span-2 aspect-video{% else %}aspect-[4/3]{% endif %} object-cover">
+            <img 
+              src="/assets/img/work/{{ year }}/{{ slug }}/{{ workImage.url }}" 
+              class="
+                w-full
+                aspect-[4/3]
+                {% if workImage.aspectVideo %}
+                  sm:aspect-video
+                {% endif %} 
+                object-cover
+              "
+            >
           </div>
         {%- endfor -%}
 

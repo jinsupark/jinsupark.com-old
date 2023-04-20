@@ -18,6 +18,7 @@ workImages:
 - url: 'siwan-01.jpg'
   alt: ''
   col: 2
+  aspectVideo: true
 - url: 'siwan-02.jpg'
   alt: ''
   col: 1
