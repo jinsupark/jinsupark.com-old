@@ -1,44 +1,47 @@
 ---
 layout: layouts/work.njk
-title: 'Solid Existence'
+title: 'Flora'
 headline: 'A Thoughtful and <br>Elegant Logo Refresh'
 bgColor: '#323859'
-slug: 'solid-existence'
-thumbnail: 'solid-existence-thumb.png'
+slug: 'flora'
+thumbnail: 'flora-thumb.png'
 headingColor: 'text-gray-700'
 
 client: 'Dave Clark Design'
-year: '2014'
+year: '2016'
 discipline: 'Identity, Branding'
 technology: 'Illustrator, Photoshop, Git'
 
 excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, which has empowered me to create my own CSS framework, Uniform CSS, I sought to contribute my design expertise to the open-source community by carefully revitalizing the iconic logo. I embraced the essence of the original design while introducing subtle yet impactful refinements.
 
 workImages:
-- url: 'solid-existence-01.jpg'
+- url: 'flora-01.jpg'
   alt: ''
   col: 1
-- url: 'solid-existence-02.jpg'
+- url: 'flora-02.jpg'
   alt: ''
   col: 1
-- url: 'solid-existence-03.jpg'
+- url: 'flora-03.jpg'
   alt: ''
   col: 2
-- url: 'solid-existence-04.jpg'
+- url: 'flora-04.jpg'
   alt: ''
   col: 1
-- url: 'solid-existence-05.jpg'
+- url: 'flora-05.jpg'
   alt: ''
   col: 1
-- url: 'solid-existence-06.jpg'
+- url: 'flora-06.jpg'
   alt: ''
   col: 2
-- url: 'solid-existence-07.jpg'
+- url: 'flora-07.jpg'
   alt: ''
   col: 1
-- url: 'solid-existence-08.jpg'
+- url: 'flora-08.jpg'
   alt: ''
   col: 1
+- url: 'flora-09.jpg'
+  alt: ''
+  col: 2
 
 ---
 
