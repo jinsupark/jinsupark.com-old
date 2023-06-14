@@ -17,25 +17,25 @@ excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, 
 workImages:
 - url: 'power-city-01.jpg'
   alt: ''
-  col: 1
+  col: 2
 - url: 'power-city-02.jpg'
   alt: ''
   col: 1
 - url: 'power-city-03.jpg'
   alt: ''
-  col: 2
+  col: 1
 - url: 'power-city-04.jpg'
   alt: ''
   col: 1
 - url: 'power-city-05.jpg'
   alt: ''
   col: 1
-- url: 'power-city-06.jpg'
-  alt: ''
-  col: 1
-- url: 'power-city-07.jpg'
-  alt: ''
-  col: 1
+# - url: 'power-city-06.jpg'
+#   alt: ''
+#   col: 1
+# - url: 'power-city-07.jpg'
+#   alt: ''
+#   col: 1
 
 ---
 

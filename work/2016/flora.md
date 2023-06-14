@@ -17,31 +17,32 @@ excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, 
 workImages:
 - url: 'flora-01.jpg'
   alt: ''
-  col: 1
+  col: 2
 - url: 'flora-02.jpg'
   alt: ''
-  col: 1
+  col: 2
 - url: 'flora-03.jpg'
   alt: ''
   col: 2
-- url: 'flora-04.jpg'
-  alt: ''
-  col: 1
-- url: 'flora-05.jpg'
-  alt: ''
-  col: 1
-- url: 'flora-06.jpg'
-  alt: ''
-  col: 2
-- url: 'flora-07.jpg'
-  alt: ''
-  col: 1
-- url: 'flora-08.jpg'
-  alt: ''
-  col: 1
-- url: 'flora-09.jpg'
-  alt: ''
-  col: 2
+# - url: 'flora-04.jpg'
+#   alt: ''
+#   col: 1
+# - url: 'flora-05.jpg'
+#   alt: ''
+#   col: 1
+# - url: 'flora-06.jpg'
+#   alt: ''
+#   col: 2
+# - url: 'flora-07.jpg'
+#   alt: ''
+#   col: 1
+# - url: 'flora-08.jpg'
+#   alt: ''
+#   col: 1
+# - url: 'flora-09.jpg'
+#   alt: ''
+#   col: 2
+#   aspectVideo: true
 
 ---
 

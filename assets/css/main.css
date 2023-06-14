@@ -1295,6 +1295,18 @@ video {
   background-color: rgb(217 119 6 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[canva\] {
+  background-color: canva;
+}
+
+.bg-\[siwan\] {
+  background-color: siwan;
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }

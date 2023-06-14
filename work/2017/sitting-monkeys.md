@@ -18,10 +18,9 @@ workImages:
 - url: 'sitting-monkeys-01.jpg'
   alt: ''
   col: 2
-  aspectVideo: true
 - url: 'sitting-monkeys-02.jpg'
   alt: ''
-  col: 2
+  col: 1
 - url: 'sitting-monkeys-03.jpg'
   alt: ''
   col: 1
@@ -31,9 +30,9 @@ workImages:
 - url: 'sitting-monkeys-05.jpg'
   alt: ''
   col: 1
-- url: 'sitting-monkeys-06.jpg'
-  alt: ''
-  col: 1
+# - url: 'sitting-monkeys-06.jpg'
+#   alt: ''
+#   col: 1
 
 ---
 

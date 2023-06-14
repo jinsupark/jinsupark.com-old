@@ -15,28 +15,24 @@ technology: 'Illustrator, Photoshop, Git'
 excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, which has empowered me to create my own CSS framework, Uniform CSS, I sought to contribute my design expertise to the open-source community by carefully revitalizing the iconic logo. I embraced the essence of the original design while introducing subtle yet impactful refinements.
 
 workImages:
+- url: 'north-four-02.jpg'
+  alt: ''
+  col: 2
 - url: 'north-four-01.jpg'
   alt: ''
   col: 2
   aspectVideo: true
-- url: 'north-four-02.jpg'
-  alt: ''
-  col: 1
 - url: 'north-four-03.jpg'
   alt: ''
-  col: 1
+  col: 2
+  aspectVideo: true
 - url: 'north-four-04.jpg'
-  alt: ''
-  col: 1
-- url: 'north-four-05.jpg'
   alt: ''
   col: 1
 - url: 'north-four-06.jpg'
   alt: ''
   col: 1
-- url: 'north-four-07.jpg'
-  alt: ''
-  col: 1
+
 - url: 'north-four-08.jpg'
   alt: ''
   col: 2
@@ -44,9 +40,16 @@ workImages:
 - url: 'north-four-09.jpg'
   alt: ''
   col: 1
-- url: 'north-four-10.jpg'
+- url: 'north-four-07.jpg'
   alt: ''
   col: 1
+# - url: 'north-four-05.jpg'
+#   alt: ''
+#   col: 1
+
+# - url: 'north-four-10.jpg'
+#   alt: ''
+#   col: 1
 ---
 
 During the design process, I meticulously compared the new logo against the original, identifying stress points where the spacing and overall balance required adjustments. This careful approach ensured that the refreshed logo maintained visual harmony while addressing areas that were previously too tight or too loose.

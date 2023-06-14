@@ -17,13 +17,14 @@ excerpt: As a long-time admirer and user of the renowned Sass CSS preprocessor, 
 workImages:
 - url: 'through-all-seasons-01.jpg'
   alt: ''
-  col: 1
+  col: 2
+  aspectVideo: true
 - url: 'through-all-seasons-02.jpg'
   alt: ''
   col: 1
 - url: 'through-all-seasons-03.jpg'
   alt: ''
-  col: 2
+  col: 1
 - url: 'through-all-seasons-04.jpg'
   alt: ''
   col: 1
@@ -36,12 +37,12 @@ workImages:
 - url: 'through-all-seasons-07.jpg'
   alt: ''
   col: 1
-- url: 'through-all-seasons-08.jpg'
-  alt: ''
-  col: 1
-- url: 'through-all-seasons-09.jpg'
-  alt: ''
-  col: 1
+# - url: 'through-all-seasons-08.jpg'
+#   alt: ''
+#   col: 1
+# - url: 'through-all-seasons-09.jpg'
+#   alt: ''
+#   col: 1
 
 ---
 
